@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E3DD0F6-A2B9-FDC1-07A1-7A561A795D72" name="serie_genre">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>19B44CC5-81D2-93CA-F626-2415D8C51DB0</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="genre_id" id="D4DB6C63-022A-3AA5-05E5-30394C27D4F4">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>1BBA5137-7CAD-620F-7161-85E8AC92B2B2</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5E59BF2-8B8D-F47A-654E-9CC0AA644752" referredColumn="4EE72894-45F5-3503-4636-7B1F04F652E7"/>
+</associations>
+</Column>
+<Column name="serie_id" id="6E3FF6FB-F357-72A4-7578-5085EE0DCF8C">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>001B1221-393E-253B-27CC-1372B6BD8E4C</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB99F399-81AA-0919-C952-41F75C1E3C61" referredColumn="B3683478-3A58-D408-BA17-04C0C589ADAC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2358B4C-C413-A68C-34CE-4D90134804CC" name="serie_genre_PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>A22545F7-F9B7-F699-A3AC-2BCC0CCF954E</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4DB6C63-022A-3AA5-05E5-30394C27D4F4"/>
+<colUsage columnID="6E3FF6FB-F357-72A4-7578-5085EE0DCF8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DC1053C-EC44-C3D5-5CCC-4C5DAB561914" name="serie_genre_genre_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>827C8A3B-2170-5BDA-F73E-26525FFC6768</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4DB6C63-022A-3AA5-05E5-30394C27D4F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="535ABFBF-6A3C-1C27-E61D-AA8E06FDEAC3" name="serie_genre_serie_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>3153587F-1849-420F-DE2E-F9B4C9D2AADC</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E3FF6FB-F357-72A4-7578-5085EE0DCF8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

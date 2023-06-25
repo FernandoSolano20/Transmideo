@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72BDAC45-F225-8B14-7959-BB6C375EAD5B" name="macroserie">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>F64892F5-630B-3B23-D080-C664CF3A7225</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="CF77F74D-2D4A-1832-20CE-38184AFB9DC2">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>151809FC-9A3C-37BE-8C67-AB8DB78FC347</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="2E427462-17F8-8BE6-A3D4-8C4438553764">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>79A79544-1972-26EE-CAAD-5C8693C55FA2</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abstract" id="4EFC007A-C31D-0BA9-1F3A-22D82F2D1E53">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>C51D10C8-C62C-CBFF-FD0B-39E236D549F0</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="based_id" id="D8C6E01B-596F-C2EA-8A8D-23D4470CC914">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>FBF194C9-5838-487C-1852-A3CF854D25D0</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54A2F6BB-9CC4-544F-6FD7-103DD237E48D" referredColumn="353BBD1D-E259-C1DA-99F4-FFC93BB1F4B3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26B4A523-5D7E-9361-79F2-29A7295BA4A3" name="macroserie_PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>1247314D-124B-8993-ED5D-05991FF0A2A9</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF77F74D-2D4A-1832-20CE-38184AFB9DC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0908CDF6-6C44-2C12-B508-7A01DA2ABEB9" name="macroserie_based_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>8FDEB242-6C44-C751-1145-54D3E45C9543</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8C6E01B-596F-C2EA-8A8D-23D4470CC914"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

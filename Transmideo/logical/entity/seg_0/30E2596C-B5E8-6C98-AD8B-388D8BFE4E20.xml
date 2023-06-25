@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30E2596C-B5E8-6C98-AD8B-388D8BFE4E20" name="movie_genre">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-04 23:30:43 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_genre" id="639C64E8-BBA2-B1E9-220A-012F5D0BAC89">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-04 23:31:22 UTC</createdTime>
+<generatorID>794D7CA7-57E6-020C-1585-AF6F8A2C0F66</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>1D18825D-C8AC-6FD0-0002-4A1FBA9FD3A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_movie" id="66770505-F10D-9845-4573-7188FBC7A71D">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 01:16:52 UTC</createdTime>
+<generatorID>DFF9F46B-8873-3CEE-A6EC-1D7093DD8DAE</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>69E6E6B2-41CD-1645-8488-DFE2C2B14E71</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B2BF64B0-B02E-08BF-41E1-54FC46894418" name="video_gender PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-04 23:32:17 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>639C64E8-BBA2-B1E9-220A-012F5D0BAC89</attributeRef>
+<attributeRef>66770505-F10D-9845-4573-7188FBC7A71D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

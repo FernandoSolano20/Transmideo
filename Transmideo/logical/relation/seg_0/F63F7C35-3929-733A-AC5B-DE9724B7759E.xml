@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tienev12" directorySegmentName="seg_0" id="F63F7C35-3929-733A-AC5B-DE9724B7759E">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-05 01:16:04 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<sourcePk>74C57CF6-B78C-16C3-CB4A-ED06B2A01FE4</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D85296C4-F7A7-6D04-6C80-F88833C2BFF1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>52A4D020-28B3-4001-B935-B31DE50B231F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

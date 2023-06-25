@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90E366AF-FE27-2278-2C11-40F238A5DD36" name="download_serie">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>9BD509E9-7267-0957-EBE7-C6015135191F</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9A22F08D-77AB-6744-4A2B-6E34F0A21FAC">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>37EEB636-3DAD-E460-D7BC-345C0F577571</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="begin_date" id="0168F1B0-17D5-898D-1C30-B10B98BDC15F">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>8465ABE8-EC80-10A5-DE3C-6C17A1EA172F</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="recent_minute" id="403F0A7D-0F28-9C70-370B-B48D70850B7B">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>68068E8E-FB86-AB32-B3B4-E9C4718E50D7</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="client_id" id="C9F32CF1-2B2E-5587-30BB-EBAA608865C7">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>C663796C-C42A-23CD-91FD-3A6E5DDCFA1F</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="380FC35A-AEDD-FF80-0D97-A3E5C5876798" referredColumn="08CA5F89-4EAB-218B-8913-3AD9F94FE02D"/>
+</associations>
+</Column>
+<Column name="state_id" id="03E351F2-CE5C-88A8-5B3C-1CE9B2FA264B">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>14F6046B-8253-1B6A-243A-C162877D2B62</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DE4DC71-75B8-C0D5-6076-EA30F811F96D" referredColumn="4BA7FF6B-F615-A13F-0171-87A9149F06A8"/>
+</associations>
+</Column>
+<Column name="serie_language_id" id="463A71E2-2AEA-B54C-664F-5631845372BF">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>3C6A7705-CC2A-467A-81D6-FE08B7364999</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="68A179C9-8C0A-8684-8BA4-A735F18DA720" referredColumn="8F14E806-3D86-6A15-B0EC-886BE685909F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC3EB083-02E3-16FB-1AE0-9D266C5C8855" name="download_serie_PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>DD16F9DA-53E4-8D77-A89E-74FB9E4D0DB2</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A22F08D-77AB-6744-4A2B-6E34F0A21FAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17E28663-4EEE-51FD-CD2F-37EAFD072480" name="download_serie_client_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>C3A20BD7-828D-EA54-D706-684F32B58DBE</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9F32CF1-2B2E-5587-30BB-EBAA608865C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="438BA0D2-F41D-C8F1-F4EF-6CC54BE774F2" name="download_serie_state_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>FF541DF4-729A-427E-9F4B-8C7406184D47</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03E351F2-CE5C-88A8-5B3C-1CE9B2FA264B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7823C47-8864-CB36-D788-CC73C27AB7CC" name="download_serie_serie_language_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:06 UTC</createdTime>
+<generatorID>6C0F078D-9BB2-8E61-E725-B8E3902588AB</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="463A71E2-2AEA-B54C-664F-5631845372BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

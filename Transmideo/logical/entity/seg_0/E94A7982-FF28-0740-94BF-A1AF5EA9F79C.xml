@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E94A7982-FF28-0740-94BF-A1AF5EA9F79C" name="serie_language">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 01:48:42 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="729612AC-985B-4890-A352-52D879C34E9E">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 01:49:14 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_audio" id="3CE12E90-7E57-7325-56A0-4A4E01F7C9C6">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 01:50:05 UTC</createdTime>
+<generatorID>BF4E1AEE-47FC-6D2B-8FA4-7766114591BD</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>86D5389C-8065-A0B1-4FDB-5C908CFBDF67</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_subtitles" id="DB6CCC46-C6BD-EB9C-7E57-8F7AF0197D6C">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 01:50:32 UTC</createdTime>
+<generatorID>3FEDC67F-C14C-A4BB-A7F0-B3F35DFFDA62</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>86D5389C-8065-A0B1-4FDB-5C908CFBDF67</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_serie" id="3CDF3C9A-7FE6-757C-2421-0D797400533F">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 01:50:56 UTC</createdTime>
+<generatorID>2E05CB4B-2482-C42C-3B22-AC84EB2850FB</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>11109853-5BE6-E46B-B5E7-A0645D0D4E5A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9374B003-38DE-24DE-335B-A1E8705AC575" name="serie_language PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 01:49:22 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>729612AC-985B-4890-A352-52D879C34E9E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

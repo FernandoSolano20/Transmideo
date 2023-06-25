@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9F26F8D-EF80-FD13-3F58-2AA080B6E2A9" name="download_movie">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-05 03:53:36 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="90A35381-3CAD-8AB8-5CEB-1CB519002C02">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-05 03:53:54 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="day" id="AFE7756D-D08F-51AE-7568-971F2A444D7B">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-05 03:54:04 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="recent_minute" id="64645820-06F2-1D4F-C24D-A67D0C7D716E">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-05 03:54:29 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client" id="954C49D6-ADFB-02D2-FF3F-197BD4E68872">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-06 23:07:23 UTC</createdTime>
+<generatorID>3CF105A9-800E-6F90-9D36-07EBC59D21D1</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>A1CAA80D-A7ED-3290-95C3-23F2EC7CA182</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_state" id="55350A90-1164-2D0B-05EF-1F4D7C210A7F">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-05 03:55:18 UTC</createdTime>
+<generatorID>4E33C0F2-4F80-97F0-76B7-4876D669CA3E</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>808C5C62-83DD-A6AC-6F16-881B837D8539</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_movie_language" id="42415056-593F-5870-FE1D-A9899D129499">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-06 23:11:30 UTC</createdTime>
+<generatorID>A5E8F4AA-367D-C580-5E4E-1B1E0E5E0098</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>778ADD0A-4932-C5C8-689D-6B5A8D891EE4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4CB48CD-64B3-AB44-2032-DA6B72B2964A" name="download PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-05 03:54:02 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>90A35381-3CAD-8AB8-5CEB-1CB519002C02</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

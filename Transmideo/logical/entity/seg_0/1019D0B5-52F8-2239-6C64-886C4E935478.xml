@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1019D0B5-52F8-2239-6C64-886C4E935478" name="cast_documentary_role">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:13:39 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_cast_documentary" id="7E35AABD-6CEF-550E-0E63-02D89CC1E580">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:14:17 UTC</createdTime>
+<generatorID>B6BBF5DF-63D1-3B98-8E95-BB069153AB2C</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>E691391A-AABC-2783-0F4F-B02962CF638B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_role" id="E918CA03-93BC-109B-CC74-C9CEE0E05155">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:14:28 UTC</createdTime>
+<generatorID>D6E0BFE9-2EB7-749C-BAA8-2B6C58180C03</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>F4A8AC88-61B9-A62A-E854-66AAF8DE6E8A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5C6C7D4B-C378-5DAA-0A08-4910600F07F6" name="cast_documentary_role PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 03:30:41 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E918CA03-93BC-109B-CC74-C9CEE0E05155</attributeRef>
+<attributeRef>7E35AABD-6CEF-550E-0E63-02D89CC1E580</attributeRef>
+<attributeRef>7E35AABD-6CEF-550E-0E63-02D89CC1E580</attributeRef>
+<attributeRef>E918CA03-93BC-109B-CC74-C9CEE0E05155</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

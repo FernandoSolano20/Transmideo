@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2D1994B-DFA7-BE7B-92FB-D6EDB5F56FCE" name="based">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:05 UTC</createdTime>
+<generatorID>DE9198E9-E641-0336-F270-1E91514E4233</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="353BBD1D-E259-C1DA-99F4-FFC93BB1F4B3">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:05 UTC</createdTime>
+<generatorID>6E55A58A-C5F4-EC26-0891-D40EC269722F</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="AB449D04-3808-CF45-BE6F-4746E9756235">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:05 UTC</createdTime>
+<generatorID>E7FD0B03-BFA7-E788-8EFD-9E92B54E78CE</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE401EFB-2D25-4672-B6FD-10ABF37CFAD1" name="based_PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-22 02:29:05 UTC</createdTime>
+<generatorID>A518458B-94B1-9D5D-BEDE-50F5CC809D9E</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="353BBD1D-E259-C1DA-99F4-FFC93BB1F4B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

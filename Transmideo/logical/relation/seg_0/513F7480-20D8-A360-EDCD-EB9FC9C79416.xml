@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vive" directorySegmentName="seg_0" id="513F7480-20D8-A360-EDCD-EB9FC9C79416">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-06-04 23:12:11 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<sourcePk>C125F027-BFF6-1497-3840-E182738BF17F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>42E53E96-B7D2-817B-628F-36E63539F112</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ADD0E076-0C71-7BE6-A574-DD205D32898B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
