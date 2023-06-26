@@ -31,7 +31,7 @@ DROP TABLE macroserie;
 DROP TABLE docuserie;
 DROP TABLE based;
 DROP TABLE language;
-DROP TABLE genres;
+DROP TABLE genre;
 DROP TABLE format;
 DROP TABLE studio;
 DROP TABLE rated;

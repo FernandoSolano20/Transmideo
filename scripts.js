@@ -45,6 +45,15 @@ for (let index = 1; index < 41; index++) {
     log(`INSERT INTO movie_language VALUES (${i}, ${getRandomInt(1, 4)}, ${getRandomInt(1, 4)}, ${index});`);
     i++;
 }
+var i = 1;
+for (let index = 1; index < 31; index++) {
+    log(`INSERT INTO documentary_language VALUES (${i}, ${getRandomInt(1, 4)}, null, ${index});`);
+    i++;
+}
+for (let index = 1; index < 31; index++) {
+    log(`INSERT INTO documentary_language VALUES (${i}, ${getRandomInt(1, 4)}, ${getRandomInt(1, 4)}, ${index});`);
+    i++;
+}
 
 for (let index = 1; index < 81; index++) {
   log(`INSERT INTO reproduction_movie VALUES (${index}, to_date('${getRandomIntDate(1,28)}/${getRandomIntDate(1,13)}/${getRandomIntDate(21,24)}', 'DD/MM/RR'), ${getRandomInt(10, 45)}, ${getRandomInt(1, 51)}, ${getRandomInt(1, 3)}, ${getRandomInt(1, 81)});`);
@@ -53,7 +62,7 @@ for (let index = 1; index < 71; index++) {
   log(`INSERT INTO reproduction_serie VALUES (${index}, to_date('${getRandomIntDate(1,28)}/${getRandomIntDate(1,13)}/${getRandomIntDate(21,24)}', 'DD/MM/RR'), ${getRandomInt(10, 45)}, ${getRandomInt(1, 51)}, ${getRandomInt(1, 3)}, ${getRandomInt(1, 81)});`);
 }
 for (let index = 1; index < 51; index++) {
-  log(`INSERT INTO reproduction_documentary VALUES (${index}, to_date('${getRandomIntDate(1,28)}/${getRandomIntDate(1,13)}/${getRandomIntDate(21,24)}', 'DD/MM/RR'), ${getRandomInt(10, 45)}, ${getRandomInt(1, 51)}, ${getRandomInt(1, 3)}, ${getRandomInt(1, 81)});`);
+  log(`INSERT INTO reproduction_documentary VALUES (${index}, to_date('${getRandomIntDate(1,28)}/${getRandomIntDate(1,13)}/${getRandomIntDate(21,24)}', 'DD/MM/RR'), ${getRandomInt(10, 45)}, ${getRandomInt(1, 51)}, ${getRandomInt(1, 3)}, ${getRandomInt(1, 61)});`);
 }
 
 
@@ -64,7 +73,7 @@ for (let index = 1; index < 21; index++) {
   log(`INSERT INTO download_serie VALUES (${index}, to_date('${getRandomIntDate(1,28)}/${getRandomIntDate(1,13)}/${getRandomIntDate(21,24)}', 'DD/MM/RR'), ${getRandomInt(10, 45)}, ${getRandomInt(1, 51)}, ${getRandomInt(1, 3)}, ${getRandomInt(1, 81)});`);
 }
 for (let index = 1; index < 11; index++) {
-  log(`INSERT INTO download_documentary VALUES (${index}, to_date('${getRandomIntDate(1,28)}/${getRandomIntDate(1,13)}/${getRandomIntDate(21,24)}', 'DD/MM/RR'), ${getRandomInt(10, 45)}, ${getRandomInt(1, 51)}, ${getRandomInt(1, 3)}, ${getRandomInt(1, 81)});`);
+  log(`INSERT INTO download_documentary VALUES (${index}, to_date('${getRandomIntDate(1,28)}/${getRandomIntDate(1,13)}/${getRandomIntDate(21,24)}', 'DD/MM/RR'), ${getRandomInt(10, 45)}, ${getRandomInt(1, 51)}, ${getRandomInt(1, 3)}, ${getRandomInt(1, 61)});`);
 }
 
 
@@ -117,30 +126,21 @@ for (let index = 1; index < 51; index++) {
 }
 
 
-var i = 1;
 for (let index = 1; index < 201; index++) {
-    log(`INSERT INTO cast_movie_role VALUES (${i}, ${getRandomInt(1, 3)});`);
-    i++;
+    log(`INSERT INTO cast_movie_role VALUES (${index}, ${getRandomInt(1, 3)});`);
 }
 for (let index = 1; index < 201; index++) {
-    log(`INSERT INTO cast_movie_role VALUES (${i}, ${getRandomInt(3, 5)});`);
-    i++;
-}
-var i = 1;
-for (let index = 1; index < 201; index++) {
-    log(`INSERT INTO cast_serie_role VALUES (${i}, ${getRandomInt(1, 3)});`);
-    i++;
+    log(`INSERT INTO cast_movie_role VALUES (${index}, ${getRandomInt(3, 5)});`);
 }
 for (let index = 1; index < 201; index++) {
-    log(`INSERT INTO cast_serie_role VALUES (${i}, ${getRandomInt(3, 5)});`);
-    i++;
+    log(`INSERT INTO cast_serie_role VALUES (${index}, ${getRandomInt(1, 3)});`);
 }
-var i = 1;
-for (let index = 1; index < 151; index++) {
-    log(`INSERT INTO cast_documentary_role VALUES (${i}, ${getRandomInt(1, 3)});`);
-    i++;
+for (let index = 1; index < 201; index++) {
+    log(`INSERT INTO cast_serie_role VALUES (${index}, ${getRandomInt(3, 5)});`);
 }
 for (let index = 1; index < 151; index++) {
-    log(`INSERT INTO cast_documentary_role VALUES (${i}, ${getRandomInt(3, 5)});`);
-    i++;
+    log(`INSERT INTO cast_documentary_role VALUES (${index}, ${getRandomInt(1, 3)});`);
+}
+for (let index = 1; index < 151; index++) {
+    log(`INSERT INTO cast_documentary_role VALUES (${index}, ${getRandomInt(3, 5)});`);
 }
