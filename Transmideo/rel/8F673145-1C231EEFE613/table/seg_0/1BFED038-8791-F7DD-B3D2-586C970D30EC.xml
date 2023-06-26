@@ -100,7 +100,7 @@
 <colUsage columnID="2FF8BDC8-E5DE-5BF5-8978-E6FBB54A6305"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="848A75B8-45AC-B042-23AA-FFD815B396ED" name="reproduction_movie_movie_language_FK">
+<ind_PK_UK id="848A75B8-45AC-B042-23AA-FFD815B396ED" name="reproduction_movie_lang_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>9721C0BC-7AD3-4D1F-606A-595E982F0B46</generatorID>

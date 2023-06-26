@@ -100,7 +100,7 @@
 <colUsage columnID="DA81D79A-1493-9CA2-1D4C-210173B1A96B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="923EDDEF-DA5C-7029-3240-A79F18991EAB" name="reproduction_documentary_client_FK">
+<ind_PK_UK id="923EDDEF-DA5C-7029-3240-A79F18991EAB" name="reproduction_docu_client_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>9D320423-421F-13B0-81E3-B69FA4BA2135</generatorID>
@@ -111,7 +111,7 @@
 <colUsage columnID="8CFBCC38-4803-1B98-327E-C2F4BF8D7710"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="265923F3-2FBE-717E-BA61-5F1E560E061E" name="reproduction_documentary_state_FK">
+<ind_PK_UK id="265923F3-2FBE-717E-BA61-5F1E560E061E" name="reproduction_docu_state_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>6342FCE2-37F6-489E-588D-03A2050167BE</generatorID>
@@ -122,7 +122,7 @@
 <colUsage columnID="7C677520-DB6E-D331-05B1-4E678C345875"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="692A34BE-A3DD-030F-3D62-E5BA992ED46C" name="reproduction_documentary_documentary_language_FK">
+<ind_PK_UK id="692A34BE-A3DD-030F-3D62-E5BA992ED46C" name="reproduction_docu_lang_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>12B28C22-62D6-BF46-C24E-C90B9AB5DF92</generatorID>

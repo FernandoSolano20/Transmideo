@@ -79,7 +79,7 @@
 <colUsage columnID="6EA19898-857F-08E6-8EED-A8047BDF924A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B4CEDD8A-23E8-ED01-A6B4-FC83CBA27392" name="documentary_language_language_FK">
+<ind_PK_UK id="B4CEDD8A-23E8-ED01-A6B4-FC83CBA27392" name="documentary_lang_lang_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>3E79378D-B9DF-B4CD-9B06-6BB148648E87</generatorID>
@@ -90,7 +90,7 @@
 <colUsage columnID="C6B0EC64-26E6-E45C-2A25-4B5DA1D60421"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9CD9C83F-0661-6BC2-5556-30EAFA71BC2B" name="documentary_language_language_FKv2">
+<ind_PK_UK id="9CD9C83F-0661-6BC2-5556-30EAFA71BC2B" name="documentary_lang_lang_FKv2">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>CF899B8C-FA2C-56CD-B2B4-239F8DA91F0F</generatorID>
@@ -101,7 +101,7 @@
 <colUsage columnID="31F33860-6204-5646-AF3A-16E10B68FAB8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C379F59F-0A90-FF6B-7CB9-F2131E970C04" name="documentary_language_documentary_FK">
+<ind_PK_UK id="C379F59F-0A90-FF6B-7CB9-F2131E970C04" name="documentary_lang_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>656C7743-3231-78F0-44CD-A9327E1496B7</generatorID>

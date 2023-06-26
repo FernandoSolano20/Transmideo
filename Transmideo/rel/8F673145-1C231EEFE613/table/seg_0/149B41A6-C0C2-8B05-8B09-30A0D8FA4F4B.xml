@@ -64,7 +64,7 @@
 <colUsage columnID="B3A8A15C-5898-1D60-343A-C776349F4694"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E9FBC2B4-F056-C87C-A30A-97F8A9A19C11" name="documentary_format_documentary_FK">
+<ind_PK_UK id="E9FBC2B4-F056-C87C-A30A-97F8A9A19C11" name="documentary_format_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>D069045F-AA1A-4CBE-4CF4-69E0781A3CAD</generatorID>

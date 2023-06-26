@@ -122,7 +122,7 @@
 <colUsage columnID="03E351F2-CE5C-88A8-5B3C-1CE9B2FA264B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F7823C47-8864-CB36-D788-CC73C27AB7CC" name="download_serie_serie_language_FK">
+<ind_PK_UK id="F7823C47-8864-CB36-D788-CC73C27AB7CC" name="download_serie_lang_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>6C0F078D-9BB2-8E61-E725-B8E3902588AB</generatorID>

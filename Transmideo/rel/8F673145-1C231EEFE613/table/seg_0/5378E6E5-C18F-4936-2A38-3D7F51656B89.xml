@@ -53,7 +53,7 @@
 <colUsage columnID="A9915440-EE8F-5921-8D50-1C3FDC220ADE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6893376B-C021-CA76-1254-8B1570B5CECF" name="cast_movie_role_cast_movie_FK">
+<ind_PK_UK id="6893376B-C021-CA76-1254-8B1570B5CECF" name="cast_movie_role_movie_FK">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>FB257702-E20E-4E6D-43AF-BA108330A897</generatorID>
