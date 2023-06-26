@@ -3401,3 +3401,5 @@ INSERT INTO cast_documentary_role VALUES (147, 3);
 INSERT INTO cast_documentary_role VALUES (148, 3);
 INSERT INTO cast_documentary_role VALUES (149, 4);
 INSERT INTO cast_documentary_role VALUES (150, 4);
+
+commit;
