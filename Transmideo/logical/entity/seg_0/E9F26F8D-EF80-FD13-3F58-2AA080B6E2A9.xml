@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="day" id="AFE7756D-D08F-51AE-7568-971F2A444D7B">
+<Attribute name="begin_date" id="AFE7756D-D08F-51AE-7568-971F2A444D7B">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-05 03:54:04 UTC</createdTime>
 <ownerDesignName>Transmideo</ownerDesignName>

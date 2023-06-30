@@ -37,8 +37,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="last_name" id="FE77B6EA-85AE-9437-50C5-BBB81A70739F">
 <createdBy>fersolano</createdBy>
@@ -50,8 +50,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="direction" id="72B2414F-7D7D-BDC2-3858-D7D9EC03B518">
 <createdBy>fersolano</createdBy>
@@ -101,8 +101,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40</dataTypeSize>
-<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="inclusion" id="44EEF4FA-BA93-2549-E971-41F3518DCFA6">
 <createdBy>fersolano</createdBy>

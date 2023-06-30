@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="day" id="ABC12442-6877-F8A2-6662-918E17E12E38">
+<Column name="begin_date" id="ABC12442-6877-F8A2-6662-918E17E12E38">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>
 <generatorID>AFE7756D-D08F-51AE-7568-971F2A444D7B</generatorID>
