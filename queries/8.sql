@@ -1,4 +1,9 @@
-SELECT name, last_name, inclusion, SUM(downloads), SUM(repro), MAX(last_reproduction), last_movie_title
+SELECT name || ' ' || last_name "NOMBRE COMPLETO",
+EXTRACT(YEAR FROM inclusion) Suscripcion,
+SUM(repro) "PELICULAS REPRODUCIDAS",
+SUM(downloads) "TOTAL DESC.",
+last_movie_title "TITULO ULT. PELICULA.",
+MAX(last_reproduction) "ULT. REPR."
 FROM (
   SELECT c.id, c.name, c.last_name, c.inclusion,
   COUNT(DISTINCT CASE WHEN dm.client_id = c.id THEN dm.id END) downloads,
@@ -36,4 +41,5 @@ LEFT JOIN (
     WHERE rm_inner.client_id = rm.client_id
   )
 ) r ON r.client_id = t.id
-GROUP BY name, last_name, inclusion, last_movie_title;
+GROUP BY name, last_name, EXTRACT(YEAR FROM inclusion), last_movie_title
+ORDER BY last_name;

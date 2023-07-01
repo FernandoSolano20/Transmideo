@@ -65,6 +65,18 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="length" id="5071FF79-F084-2EF5-AE07-56D7C9FA69AA">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-07-01 02:03:12 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="seasons" id="F0E2F13C-49B0-6394-D22F-FF459A493450">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-05 00:02:37 UTC</createdTime>

@@ -1,10 +1,10 @@
-SELECT * FROM (
-  SELECT Tipo, Titulo, Reproducciones, Descargas, last_reproduction "Ult. Repr.", last_download "Ult. Down." FROM (
+SELECT ROWNUM Top, r.* FROM (
+  SELECT Titulo, Tipo, Reproducciones, Descargas, last_reproduction "ULT. REPR.", last_download "ULT. DESC." FROM (
     SELECT 'Pelicula' Tipo, m.title Titulo, 
       COUNT(DISTINCT dm.id) Descargas,
       COUNT(DISTINCT rm.id) Reproducciones,
       MAX(rm.begin_date) last_reproduction,
-      MAX(dm.day) last_download,
+      MAX(dm.begin_date) last_download,
       COUNT(DISTINCT dm.id) + COUNT(DISTINCT rm.id) Total
       FROM movie m
       LEFT JOIN movie_language ml ON ml.movie_id = m.id
@@ -39,5 +39,5 @@ SELECT * FROM (
       GROUP BY d.title
   )
   ORDER BY Total DESC
-)
+) r
 WHERE ROWNUM <= 10;

@@ -54,6 +54,16 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="length" id="5BBFD12E-F59C-DEFA-360A-FA136E57A005">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-07-01 02:00:50 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="seasons" id="F9660B6E-8913-FAB1-366A-786E40EBB889">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-22 02:29:06 UTC</createdTime>

@@ -1,8 +1,8 @@
-SELECT g.name,
+SELECT g.name Genero,
 COUNT(DISTINCT m.id) Peliculas,
 COUNT(DISTINCT s.id) Series,
-EXTRACT(YEAR FROM MIN(m.year)) "Primer Pelicula",
-EXTRACT(YEAR FROM MIN(s.begin_date)) "Primer Serie"
+EXTRACT(YEAR FROM MIN(m.year)) "PRIMER PELICULA",
+EXTRACT(YEAR FROM MIN(s.begin_date)) "PRIMER SERIE"
 FROM genre g
 LEFT JOIN movie_genre mg ON mg.genre_id = g.id
 LEFT JOIN movie m ON m.id = mg.movie_id
