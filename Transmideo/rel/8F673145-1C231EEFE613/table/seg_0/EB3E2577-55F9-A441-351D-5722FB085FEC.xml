@@ -117,6 +117,20 @@
 <colAssociation fkAssociation="1D1680AF-5ACF-3E4B-987D-A12B8433D56E" referredColumn="CF77F74D-2D4A-1832-20CE-38184AFB9DC2"/>
 </associations>
 </Column>
+<Column name="country_id" id="D687265D-E881-53A6-9021-B3D2965AC544">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-07-04 23:59:12 UTC</createdTime>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0616D4C4-0B53-A655-A7F0-C9A851FF6686" referredColumn="1640C226-364C-3482-2635-D72EB713DFFE"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="6375F2B8-304A-6019-0A29-F86556CD14C8" name="serie_PK">
@@ -151,6 +165,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2D111266-5CD1-1642-F824-B1CC299C53FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59491F15-8063-FD54-1DBF-34C4CBDE017B" name="serie_country_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-07-04 23:59:12 UTC</createdTime>
+<generatorID>C125F027-BFF6-1497-3840-E182738BF17F</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D687265D-E881-53A6-9021-B3D2965AC544"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
