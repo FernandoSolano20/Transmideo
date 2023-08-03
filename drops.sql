@@ -36,6 +36,7 @@ DROP TABLE format;
 DROP TABLE studio;
 DROP TABLE rated;
 DROP TABLE device;
+DROP TABLE membership;
 DROP TABLE client;
 DROP TABLE country;
 DROP TABLE account_type;

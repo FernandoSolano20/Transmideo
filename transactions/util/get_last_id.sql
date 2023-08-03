@@ -1,0 +1,9 @@
+CREATE OR REPLACE FUNCTION Get_Last_Id(last_id NUMBER) RETURN NUMBER IS
+BEGIN
+  IF last_id IS NULL THEN
+    RETURN 1;
+  ELSE
+    RETURN last_id + 1;
+  END IF;
+END Get_Last_Id;
+/

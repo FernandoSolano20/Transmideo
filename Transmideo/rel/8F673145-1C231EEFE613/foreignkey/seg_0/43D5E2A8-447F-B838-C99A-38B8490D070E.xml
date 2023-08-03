@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="43D5E2A8-447F-B838-C99A-38B8490D070E" containerWithKeyObject="BD005EA6-9F4A-47DD-29C5-6B76F5D0425B" localFKIndex="1974CCE8-FBCC-657F-0915-8A9D166F7A79" name="artist_country_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-01 08:29:06 UTC</createdTime>
+<generatorID>BD348CB6-6BEC-73C2-CA67-C2E2F93A854C</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<referredTableLongName>country</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>67150681-4FAE-C29B-1269-1A2EBE22FF6D</referredTableID>
+<keyObject>B8020BE2-CCF7-987A-EC4F-2AD708CF57DC</keyObject>
+<referredKeyID>B8020BE2-CCF7-987A-EC4F-2AD708CF57DC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

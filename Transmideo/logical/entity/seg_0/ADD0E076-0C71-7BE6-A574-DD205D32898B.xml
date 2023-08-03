@@ -116,7 +116,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="EEB9D96D-F9D0-4F2C-E23D-7A6612915205">
+<Attribute name="id_country" id="EEB9D96D-F9D0-4F2C-E23D-7A6612915205">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-04 23:12:11 UTC</createdTime>
 <generatorID>513F7480-20D8-A360-EDCD-EB9FC9C79416</generatorID>
@@ -130,7 +130,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id2" id="92D31A47-AB9B-4FBE-281A-56FA0E90F10A">
+<Attribute name="id_account_type" id="92D31A47-AB9B-4FBE-281A-56FA0E90F10A">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-06-04 23:14:39 UTC</createdTime>
 <generatorID>13855E93-81F6-826A-9FF9-55DEF2C13F17</generatorID>

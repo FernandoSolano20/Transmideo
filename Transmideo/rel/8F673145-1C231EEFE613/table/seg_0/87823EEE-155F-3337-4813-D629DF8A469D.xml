@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87823EEE-155F-3337-4813-D629DF8A469D" name="movie_genre">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-01 08:29:06 UTC</createdTime>
+<generatorID>30E2596C-B5E8-6C98-AD8B-388D8BFE4E20</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="genre_id" id="F0B9DBB1-7FD1-E8F2-B37A-981A2C5BDA71">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-01 08:29:06 UTC</createdTime>
+<generatorID>639C64E8-BBA2-B1E9-220A-012F5D0BAC89</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A68B5F2D-2FEC-0757-6EBD-163157972011" referredColumn="AD94A42B-2D94-4370-3FC2-C7FAF9DEEB3C"/>
+</associations>
+</Column>
+<Column name="movie_id" id="A8DA1B3C-3376-5DB1-2E4C-236828832A4A">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-01 08:29:06 UTC</createdTime>
+<generatorID>66770505-F10D-9845-4573-7188FBC7A71D</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="327E2BEF-5358-B826-529E-8D697B1D6D63" referredColumn="85FB4C66-2C25-049C-1584-360CE5A34027"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="794864C6-9478-4D01-59E4-C2A6EBA3B031" name="movie_genre_PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-01 08:29:06 UTC</createdTime>
+<generatorID>B2BF64B0-B02E-08BF-41E1-54FC46894418</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0B9DBB1-7FD1-E8F2-B37A-981A2C5BDA71"/>
+<colUsage columnID="A8DA1B3C-3376-5DB1-2E4C-236828832A4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A76DFC0C-B1D1-2654-A973-6D8C039086F7" name="movie_genre_movie_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-01 08:29:06 UTC</createdTime>
+<generatorID>DFF9F46B-8873-3CEE-A6EC-1D7093DD8DAE</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8DA1B3C-3376-5DB1-2E4C-236828832A4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A3F5AAD-D1E8-8A18-6E8A-4745E71F69BE" name="movie_genre_genre_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-01 08:29:06 UTC</createdTime>
+<generatorID>794D7CA7-57E6-020C-1585-AF6F8A2C0F66</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0B9DBB1-7FD1-E8F2-B37A-981A2C5BDA71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

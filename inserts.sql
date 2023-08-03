@@ -62,6 +62,58 @@ INSERT INTO client VALUES (49, 'Maxi', 'Nerea Salas Morante', '321 Juniper Rd.',
 INSERT INTO client VALUES (50, 'Olegario', 'Prieto-Quevedo', '654 Fir Ln.', '(839)5009-9083', to_date('19/02/89','DD/MM/RR'), 'olegarioprietoquevedo@gmail.com', to_date('11/04/19','DD/MM/RR'), 2, 4);
 
 
+INSERT INTO membership VALUES (1, to_date('09/10/22', 'DD/MM/RR'), 20376, 1);
+INSERT INTO membership VALUES (2, to_date('11/05/21', 'DD/MM/RR'), 18147, 2);
+INSERT INTO membership VALUES (3, to_date('22/12/21', 'DD/MM/RR'), 15078, 3);
+INSERT INTO membership VALUES (4, to_date('20/11/21', 'DD/MM/RR'), 20727, 4);
+INSERT INTO membership VALUES (5, to_date('15/04/21', 'DD/MM/RR'), 23187, 5);
+INSERT INTO membership VALUES (6, to_date('05/05/23', 'DD/MM/RR'), 18333, 6);
+INSERT INTO membership VALUES (7, to_date('24/11/22', 'DD/MM/RR'), 10318, 7);
+INSERT INTO membership VALUES (8, to_date('13/03/23', 'DD/MM/RR'), 22747, 8);
+INSERT INTO membership VALUES (9, to_date('23/07/22', 'DD/MM/RR'), 21787, 9);
+INSERT INTO membership VALUES (10, to_date('09/09/22', 'DD/MM/RR'), 13356, 10);
+INSERT INTO membership VALUES (11, to_date('14/12/22', 'DD/MM/RR'), 19222, 11);
+INSERT INTO membership VALUES (12, to_date('08/07/23', 'DD/MM/RR'), 10986, 12);
+INSERT INTO membership VALUES (13, to_date('15/10/21', 'DD/MM/RR'), 20804, 13);
+INSERT INTO membership VALUES (14, to_date('16/05/22', 'DD/MM/RR'), 18287, 14);
+INSERT INTO membership VALUES (15, to_date('12/01/23', 'DD/MM/RR'), 16987, 15);
+INSERT INTO membership VALUES (16, to_date('10/05/22', 'DD/MM/RR'), 16351, 16);
+INSERT INTO membership VALUES (17, to_date('14/02/23', 'DD/MM/RR'), 14870, 17);
+INSERT INTO membership VALUES (18, to_date('05/03/23', 'DD/MM/RR'), 11865, 18);
+INSERT INTO membership VALUES (19, to_date('13/12/23', 'DD/MM/RR'), 20392, 19);
+INSERT INTO membership VALUES (20, to_date('25/07/21', 'DD/MM/RR'), 10871, 20);
+INSERT INTO membership VALUES (21, to_date('27/05/21', 'DD/MM/RR'), 23156, 21);
+INSERT INTO membership VALUES (22, to_date('24/10/21', 'DD/MM/RR'), 11849, 22);
+INSERT INTO membership VALUES (23, to_date('16/01/21', 'DD/MM/RR'), 13214, 23);
+INSERT INTO membership VALUES (24, to_date('25/07/22', 'DD/MM/RR'), 16262, 24);
+INSERT INTO membership VALUES (25, to_date('01/08/21', 'DD/MM/RR'), 24098, 25);
+INSERT INTO membership VALUES (26, to_date('08/07/21', 'DD/MM/RR'), 20639, 26);
+INSERT INTO membership VALUES (27, to_date('24/01/22', 'DD/MM/RR'), 21343, 27);
+INSERT INTO membership VALUES (28, to_date('07/12/23', 'DD/MM/RR'), 13658, 28);
+INSERT INTO membership VALUES (29, to_date('02/07/23', 'DD/MM/RR'), 12239, 29);
+INSERT INTO membership VALUES (30, to_date('03/07/23', 'DD/MM/RR'), 10630, 30);
+INSERT INTO membership VALUES (31, to_date('23/09/21', 'DD/MM/RR'), 24087, 31);
+INSERT INTO membership VALUES (32, to_date('22/09/23', 'DD/MM/RR'), 20089, 32);
+INSERT INTO membership VALUES (33, to_date('21/05/23', 'DD/MM/RR'), 18712, 33);
+INSERT INTO membership VALUES (34, to_date('16/01/21', 'DD/MM/RR'), 22341, 34);
+INSERT INTO membership VALUES (35, to_date('18/11/21', 'DD/MM/RR'), 20325, 35);
+INSERT INTO membership VALUES (36, to_date('14/09/22', 'DD/MM/RR'), 18191, 36);
+INSERT INTO membership VALUES (37, to_date('16/11/22', 'DD/MM/RR'), 18068, 37);
+INSERT INTO membership VALUES (38, to_date('12/01/23', 'DD/MM/RR'), 18060, 38);
+INSERT INTO membership VALUES (39, to_date('22/09/23', 'DD/MM/RR'), 12904, 39);
+INSERT INTO membership VALUES (40, to_date('11/10/21', 'DD/MM/RR'), 22578, 40);
+INSERT INTO membership VALUES (41, to_date('13/02/21', 'DD/MM/RR'), 19555, 41);
+INSERT INTO membership VALUES (42, to_date('11/11/22', 'DD/MM/RR'), 14418, 42);
+INSERT INTO membership VALUES (43, to_date('19/09/23', 'DD/MM/RR'), 21042, 43);
+INSERT INTO membership VALUES (44, to_date('27/02/23', 'DD/MM/RR'), 20370, 44);
+INSERT INTO membership VALUES (45, to_date('08/10/23', 'DD/MM/RR'), 15156, 45);
+INSERT INTO membership VALUES (46, to_date('02/02/23', 'DD/MM/RR'), 11202, 46);
+INSERT INTO membership VALUES (47, to_date('23/08/23', 'DD/MM/RR'), 18502, 47);
+INSERT INTO membership VALUES (48, to_date('16/04/22', 'DD/MM/RR'), 18045, 48);
+INSERT INTO membership VALUES (49, to_date('04/02/21', 'DD/MM/RR'), 15930, 49);
+INSERT INTO membership VALUES (50, to_date('20/09/23', 'DD/MM/RR'), 13558, 50);
+
+
 INSERT INTO device VALUES (1, 'TV Samsung', 8);
 INSERT INTO device VALUES (2, 'iPhone 13', 44);
 INSERT INTO device VALUES (3, 'MacBook Pro', 32);
