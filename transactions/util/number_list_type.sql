@@ -1,2 +1,0 @@
-CREATE OR REPLACE TYPE number_list_type AS TABLE OF NUMBER;
-/
