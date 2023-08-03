@@ -42,6 +42,11 @@ Begin
   castings.extend;
   castings(4) := casting_data(40, number_list(2, 4));
 
-  Insert_Movie('Peli Z', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres, formats, languages, castings); 
+  --Insert_Movie('Peli Z', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres, formats, languages, castings); 
+
+  --Insert_Serie('Serie Z', 'Serie sobre z', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres, formats, languages, castings, 2); 
+
+  --Insert_Documentary('Documental Z', 'Documental sobre z', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres, formats, languages, castings); 
+
 End;
 /
