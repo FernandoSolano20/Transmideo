@@ -11,9 +11,14 @@ Begin
   --Insert_Reproduction_Serie(81, 51);
   --Insert_Reproduction_Doc(61, 51);
 
-  Insert_Download_Movie(41, 51);
-  Insert_Download_Serie(81, 51);
-  Insert_Download_Doc(61, 51);
+  --Insert_Download_Movie(41, 51);
+  --Insert_Download_Serie(81, 51);
+  --Insert_Download_Doc(61, 51);
+
+  --Add_Movie_To_Saga(5, 41);
+  --Add_Serie_To_Macroserie(5, 41);
+  --Add_Documentary_To_Docuserie(2, 33);
+
 
   genres.extend;
   genres(1) := 3;
