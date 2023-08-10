@@ -1,0 +1,6 @@
+start validate_download_documentary;
+start validate_download_movie;
+start validate_download_serie;
+start validate_reproduction_documentary;
+start validate_reproduction_movie;
+start validate_reproduction_serie;

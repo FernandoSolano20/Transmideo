@@ -1,0 +1,14 @@
+start add_documentary_to_docuserie;
+start add_movie_to_saga;
+start add_serie_to_macroserie;
+start insert_client;
+start insert_documentary;
+start insert_download_documentary;
+start insert_download_movie;
+start insert_download_serie;
+start insert_membership;
+start insert_movie;
+start insert_reproduction_documentary;
+start insert_reproduction_movie;
+start insert_reproduction_serie;
+start insert_serie;
