@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="FE721934-B9ED-D7FB-2F04-7BD0AD473E89" name="serie">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>674ECCBC-2CCC-6FD2-0D8F-7CE58E3BEA7D</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3A5A97AB-BEE5-508B-92C2-2D01A70EF1F7">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>11109853-5BE6-E46B-B5E7-A0645D0D4E5A</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="2C59BCBB-6498-376E-756B-E69589133143">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>53629265-B42C-32B2-C2C0-A2E158E7509E</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abstract" id="2337ABB5-93FA-16C4-D1C3-7C2B407149F9">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>8701E233-A81D-7AD8-7A79-DFFC4C7F1219</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="begin_date" id="09CC50F7-D7DF-0506-0923-31A0EA9E4D68">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>CE20EEE6-57ED-4A44-EDC3-4A0A3BE49B0C</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="length" id="B42E5240-B7B7-38A6-1627-83AEB8EB6450">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>1F7F4545-AD53-4A30-4B17-ABB82C949A04</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seasons" id="7B9CBE7A-4CF2-AAFF-3367-0EAD40244156">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>8C54D8F1-52D8-2873-F03A-96608CF269BA</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chapters" id="64A592A7-5B78-012D-EC6C-AA06A5FE73C7">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>84196C05-CB6A-0E6B-B54E-132CA8D2C4A2</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rated_id" id="A9727F42-4D2F-A6FA-003D-FE66D25F9709">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>200DBC44-7BAF-3467-3793-25F81C7DF4AF</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6059784D-8CC5-15D8-32F7-F6B765E144A7" referredColumn="6D853A7A-7314-0565-3E73-96FF12971570"/>
+</associations>
+</Column>
+<Column name="macroserie_id" id="80D5795B-C0A0-05BB-3A6B-588E29BCD700">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>2E246FF6-DEE4-F346-525E-D8BBAAA622B0</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9A5E2EC-ECA6-4049-7AEF-FD9D308EE2B2" referredColumn="9B7D366E-0029-4C3C-CB4E-FADFD4BB96AE"/>
+</associations>
+</Column>
+<Column name="country_id" id="F1C0DB26-450B-AC2E-2194-2A199A956101">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>45BED599-FF4F-ED7D-837E-21F601B3B1A5</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EE73582-8AF2-72BB-F648-9AD7BAAB787B" referredColumn="45C59899-25B1-F2CC-8A4B-6397551F598D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E3688D99-8618-2C0D-B2A5-E2DFADF0D958" name="serie_PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>1E1A69D7-C61B-2CB7-1050-2A8DA1ABF5FA</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A5A97AB-BEE5-508B-92C2-2D01A70EF1F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CF84FF0-1EB9-A48B-8D67-15C6E6E05F8E" name="serie_rated_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>D7EA528E-9A69-1269-F6C4-3A881C124D38</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9727F42-4D2F-A6FA-003D-FE66D25F9709"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8B7376F-687C-DA7E-14E9-D490AA65CA29" name="serie_macroserie_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>545FA402-AFD2-C9D6-82D6-A2AD6D1462B1</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80D5795B-C0A0-05BB-3A6B-588E29BCD700"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E9740E2-1915-948A-C2C7-E5751EED3085" name="serie_country_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>E5874E7A-8723-FAA5-D1CB-1567D1987453</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1C0DB26-450B-AC2E-2194-2A199A956101"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

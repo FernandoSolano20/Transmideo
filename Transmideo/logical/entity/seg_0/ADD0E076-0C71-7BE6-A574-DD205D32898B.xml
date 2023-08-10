@@ -144,6 +144,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_account_status" id="1726887C-1713-0B37-2A27-DAC764A06BC4">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:54:58 UTC</createdTime>
+<generatorID>EAD11881-D7C7-DC76-40A9-635BE0839A65</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<engineerTo>
+<item key="8F673145-A2FF-7800-5F20-1C231EEFE613" value="true"/>
+</engineerTo>
+<referedAttribute>B1F2F714-6C99-4E76-4211-26A506C5204B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="F6CFCC4F-5DDD-8294-9641-C8E3FA4773F0" name="client PK">

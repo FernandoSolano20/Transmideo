@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB7C56FA-9F57-0C05-C50B-624B0F352370" name="movie">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>3AC9DA14-2DAF-09E0-9F41-FC00321AACDC</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0AFAD361-83BC-E0C9-3A3B-7CDB82C1CC2F">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>69E6E6B2-41CD-1645-8488-DFE2C2B14E71</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="2FE21B3B-6520-7BA2-A3E3-EE6096B41C81">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>FD0061E1-F38B-AD14-3DBA-CE8F2EAF7A7D</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year" id="6BE5ECB9-4831-31F0-9708-C79A39EE723E">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>7500F74B-EB3D-1E94-477A-86FD0EA53ECE</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="length" id="67BD6D2C-5AF2-B316-8AD4-EA6F2E45BABF">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>AF151D34-D4A3-7B07-27EF-255097EEE72C</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_id" id="78A431B8-3507-AF0E-96A3-8E00AAAB5513">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>592174E2-F651-7AF1-87C6-48810730217D</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30FB9BE3-863A-9689-BEAD-CA3C714A1F02" referredColumn="45C59899-25B1-F2CC-8A4B-6397551F598D"/>
+</associations>
+</Column>
+<Column name="studio_id" id="75E0571C-D317-EC68-ADF2-60A31A01A5B2">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>FAA2FDBF-0360-4E54-1652-D1B3AA896CDD</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4603AD25-1A0D-0EB2-13D5-249013A06808" referredColumn="773FEF06-B3B1-B736-E6B6-B37FCF893877"/>
+</associations>
+</Column>
+<Column name="rated_id" id="694BF891-CDF6-A486-54CC-CFDDEC1540B9">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>A71A523B-4163-062D-E7CE-8BD266711808</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="373C4F61-AFD6-2C12-C028-D55552E0A43D" referredColumn="6D853A7A-7314-0565-3E73-96FF12971570"/>
+</associations>
+</Column>
+<Column name="saga_id" id="450F242E-4AD3-89F2-57E2-F0E7E71875EA">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>2E4273D5-0297-9154-7CE7-6C07D6E4462C</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47B08435-B48C-E949-F1C5-7EBE3C44DF88" referredColumn="224574DA-D942-5B3B-D3AB-23D6DF589C4E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE7EB4F3-237E-6970-8642-935B02035DD8" name="movie_PK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>DC63AFEC-334B-0E42-6570-33FBD7FF7218</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AFAD361-83BC-E0C9-3A3B-7CDB82C1CC2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="232D415D-AB5C-6B3A-AF1B-6613E8FB2F5A" name="movie_rated_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>7B0698B9-B015-341A-1180-10886E9AEE93</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="694BF891-CDF6-A486-54CC-CFDDEC1540B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72561346-5716-5235-9F2D-B109665D46D8" name="movie_saga_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>B3ABFDD6-5996-B590-5529-7DAD48711528</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="450F242E-4AD3-89F2-57E2-F0E7E71875EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEAFDCA9-451D-AD45-95D0-676720235787" name="movie_country_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>D75B6DE3-80EF-8322-9BA3-2926C2FC5BA5</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78A431B8-3507-AF0E-96A3-8E00AAAB5513"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEC074F4-A481-7C05-0D1B-4189648F560E" name="movie_studio_FK">
+<createdBy>fersolano</createdBy>
+<createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<generatorID>6BC8EF3D-1132-D7F6-9A83-C89823EF3FA0</generatorID>
+<ownerDesignName>Transmideo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75E0571C-D317-EC68-ADF2-60A31A01A5B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
