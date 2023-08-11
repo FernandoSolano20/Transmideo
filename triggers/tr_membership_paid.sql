@@ -30,7 +30,7 @@ CREATE OR REPLACE TRIGGER on_membership_paid_trg
       RAISE_APPLICATION_ERROR(-20503,'Su membresia aun no ha expirado.');
     END IF;
 
-    Update_Client_Status(:NEW.client_id, 1);
+    transmideo.Update_Client_Status(:NEW.client_id, 1);
   END BEFORE EACH ROW;
 
 

@@ -42,17 +42,4 @@ DROP TABLE country;
 DROP TABLE account_type;
 DROP TABLE account_status;
 
-DROP PROCEDURE Add_Documentary_To_Docuserie;
-DROP PROCEDURE Add_Movie_To_Saga;
-DROP PROCEDURE Add_Serie_To_Macroserie;
-DROP PROCEDURE Insert_Client;
-DROP PROCEDURE Insert_Documentary;
-DROP PROCEDURE Insert_Download_Doc;
-DROP PROCEDURE Insert_Download_Movie;
-DROP PROCEDURE Insert_Download_Serie;
-DROP PROCEDURE Insert_Membership;
-DROP PROCEDURE Insert_Movie;
-DROP PROCEDURE Insert_Reproduction_Doc;
-DROP PROCEDURE Insert_Reproduction_Movie;
-DROP PROCEDURE Insert_Reproduction_Serie;
-DROP PROCEDURE Insert_Serie;
+DROP PACKAGE transmideo;

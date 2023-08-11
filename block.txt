@@ -20,8 +20,8 @@ SQL> DECLARE
  19    new_movie_id movie.id%TYPE := NULL;
  20    new_serie_id serie.id%TYPE := NULL;
  21  Begin
- 22    Insert_Client('Alfa', 'Alfa', 'Alfa city', '1111-1111', to_date('21/03/95','DD/MM/RR'), 'alfa@gmail.com', 1, 1);
- 23    Insert_Client('Beta', 'Beta', 'Beta city', '2222-2222', to_date('19/04/88','DD/MM/RR'), 'beta@gmail.com', 1, 1);
+ 22    transmideo.Insert_Client('Alfa', 'Alfa', 'Alfa city', '1111-1111', to_date('21/03/95','DD/MM/RR'), 'alfa@gmail.com', 1, 1);
+ 23    transmideo.Insert_Client('Beta', 'Beta', 'Beta city', '2222-2222', to_date('19/04/88','DD/MM/RR'), 'beta@gmail.com', 1, 1);
  24  
  25    SELECT id INTO alfa_id
  26    FROM client
@@ -31,10 +31,10 @@ SQL> DECLARE
  30    FROM client
  31    WHERE name = 'Beta';
  32  
- 33    Insert_Membership(15000, alfa_id);
- 34    Insert_Movie('Pelicula nueva', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres_movie, formats_movie, languages_movie, castings_movie);
- 35    Insert_Serie('Serie nueva', 'Serie buena', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres_serie, formats_serie, languages_serie, castings_serie);
- 36    Insert_Documentary('Documental nuevo', 'Documental bueno', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres_documentary, formats_documentary, languages_documentary, castings_documentary);
+ 33    transmideo.Insert_Membership(15000, alfa_id);
+ 34    transmideo.Insert_Movie('Pelicula nueva', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres_movie, formats_movie, languages_movie, castings_movie);
+ 35    transmideo.Insert_Serie('Serie nueva', 'Serie buena', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres_serie, formats_serie, languages_serie, castings_serie);
+ 36    transmideo.Insert_Documentary('Documental nuevo', 'Documental bueno', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres_documentary, formats_documentary, languages_documentary, castings_documentary);
  37  
  38    SELECT m.id INTO new_movie_id
  39    FROM movie m
@@ -46,8 +46,8 @@ SQL> DECLARE
  45    INNER JOIN serie_language sl ON sl.serie_id = s.id
  46    WHERE s.title = 'Serie nueva' AND ROWNUM = 1;
  47  
- 48    Insert_Download_Movie(new_movie_id, alfa_id);
- 49    Insert_Reproduction_Serie(new_serie_id, beta_id);
+ 48    transmideo.Insert_Download_Movie(new_movie_id, alfa_id);
+ 49    transmideo.Insert_Reproduction_Serie(new_serie_id, beta_id);
  50  End;
  51  /
 Cliente agregado con exito.                                                                         
@@ -58,7 +58,7 @@ Pelicula agregada con existo.
 Serie agregada con existo.                                                                          
 Documental agregado exito.                                                                          
 Solictud de descarga creada con existo.                                                             
-El cliente esta inactivo, no se ha procesado la solicitud de reproduccion.                          
+El cliente no ha echo su primer pago, no se ha procesado la solicitud de reproduccion.              
 
 PL/SQL procedure successfully completed.
 

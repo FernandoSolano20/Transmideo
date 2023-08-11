@@ -19,8 +19,8 @@ DECLARE
   new_movie_id movie.id%TYPE := NULL;
   new_serie_id serie.id%TYPE := NULL;
 Begin
-  Insert_Client('Alfa', 'Alfa', 'Alfa city', '1111-1111', to_date('21/03/95','DD/MM/RR'), 'alfa@gmail.com', 1, 1); 
-  Insert_Client('Beta', 'Beta', 'Beta city', '2222-2222', to_date('19/04/88','DD/MM/RR'), 'beta@gmail.com', 1, 1);
+  transmideo.Insert_Client('Alfa', 'Alfa', 'Alfa city', '1111-1111', to_date('21/03/95','DD/MM/RR'), 'alfa@gmail.com', 1, 1); 
+  transmideo.Insert_Client('Beta', 'Beta', 'Beta city', '2222-2222', to_date('19/04/88','DD/MM/RR'), 'beta@gmail.com', 1, 1);
 
   SELECT id INTO alfa_id
   FROM client
@@ -30,10 +30,10 @@ Begin
   FROM client
   WHERE name = 'Beta';
 
-  Insert_Membership(15000, alfa_id);
-  Insert_Movie('Pelicula nueva', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres_movie, formats_movie, languages_movie, castings_movie); 
-  Insert_Serie('Serie nueva', 'Serie buena', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres_serie, formats_serie, languages_serie, castings_serie); 
-  Insert_Documentary('Documental nuevo', 'Documental bueno', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres_documentary, formats_documentary, languages_documentary, castings_documentary); 
+  transmideo.Insert_Membership(15000, alfa_id);
+  transmideo.Insert_Movie('Pelicula nueva', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres_movie, formats_movie, languages_movie, castings_movie); 
+  transmideo.Insert_Serie('Serie nueva', 'Serie buena', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres_serie, formats_serie, languages_serie, castings_serie); 
+  transmideo.Insert_Documentary('Documental nuevo', 'Documental bueno', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres_documentary, formats_documentary, languages_documentary, castings_documentary); 
   
   SELECT m.id INTO new_movie_id
   FROM movie m
@@ -45,7 +45,7 @@ Begin
   INNER JOIN serie_language sl ON sl.serie_id = s.id
   WHERE s.title = 'Serie nueva' AND ROWNUM = 1;
 
-  Insert_Download_Movie(new_movie_id, alfa_id);
-  Insert_Reproduction_Serie(new_serie_id, beta_id);
+  transmideo.Insert_Download_Movie(new_movie_id, alfa_id);
+  transmideo.Insert_Reproduction_Serie(new_serie_id, beta_id);
 End;
 /

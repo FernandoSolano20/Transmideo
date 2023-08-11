@@ -18,7 +18,7 @@ BEGIN
 
   IF max_expiration_day < SYSDATE THEN
     IF account_status = 1 THEN
-      Update_Client_Status(:NEW.client_id, 2);
+      transmideo.Update_Client_Status(:NEW.client_id, 2);
     END IF;
     RAISE_APPLICATION_ERROR(-20502,'Su membresia ha expirado.');
   END IF;
