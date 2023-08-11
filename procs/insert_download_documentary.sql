@@ -8,6 +8,8 @@ CREATE OR REPLACE PROCEDURE Insert_Download_Doc(
 
   foreign_violated EXCEPTION;
   PRAGMA EXCEPTION_INIT(foreign_violated, -2291);
+  expired_membership EXCEPTION;
+  PRAGMA EXCEPTION_INIT(expired_membership, -20502);
 BEGIN
   OPEN max_id_rm_cursor;
   FETCH max_id_rm_cursor INTO last_id;
@@ -22,6 +24,9 @@ BEGIN
     WHEN foreign_violated THEN
       ROLLBACK;
       DBMS_OUTPUT.PUT_LINE('El un error con las llaves foraneas al insertar.');
+    WHEN expired_membership THEN
+      ROLLBACK;
+      DBMS_OUTPUT.PUT_LINE('Su membresia ha expirado.');
     WHEN OTHERS THEN
       ROLLBACK;
       DBMS_OUTPUT.PUT_LINE('Ocurrio un error.');

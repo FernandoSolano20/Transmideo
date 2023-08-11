@@ -7,8 +7,8 @@ Begin
   -- Insert_Client('Fernando', 'Solano', 'Hatillo', '8472-7296', to_date('31/07/00','DD/MM/RR'), 'fesolano@gmail.com', 1, 1); 
   -- Insert_Membership(10000, 51); 
 
-  -- Insert_Reproduction_Movie(41, 51);
-  --Insert_Reproduction_Serie(81, 34);
+  Insert_Reproduction_Movie(41, 51);
+  Insert_Reproduction_Serie(81, 34);
   --Insert_Reproduction_Doc(61, 34);
 
   --Insert_Download_Movie(41, 34);

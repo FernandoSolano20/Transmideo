@@ -8,6 +8,8 @@ CREATE OR REPLACE PROCEDURE Insert_Membership(
 
   foreign_violated EXCEPTION;
   PRAGMA EXCEPTION_INIT(foreign_violated, -2291);
+  not_expired_membership EXCEPTION;
+  PRAGMA EXCEPTION_INIT(not_expired_membership, -20503);
 BEGIN
   OPEN max_id_membership_cursor;
   FETCH max_id_membership_cursor INTO last_id;
@@ -22,6 +24,9 @@ BEGIN
     WHEN foreign_violated THEN
       ROLLBACK;
       DBMS_OUTPUT.PUT_LINE('Ocurrio un error el id del client no existe.');
+    WHEN not_expired_membership THEN
+      ROLLBACK;
+      DBMS_OUTPUT.PUT_LINE('Su membresia no ha expirado aun.');
     WHEN OTHERS THEN
       ROLLBACK;
       DBMS_OUTPUT.PUT_LINE('Ocurrio un error.');
