@@ -1,8 +1,8 @@
 CREATE OR REPLACE PACKAGE transmideo IS
   PROCEDURE Update_Client_Status(client_id NUMBER, client_status NUMBER);
-  PROCEDURE Add_Documentary_To_Docuserie(docuserie NUMBER, documentary_id NUMBER);
-  PROCEDURE Add_Movie_To_Saga(saga NUMBER, movie_id NUMBER);
-  PROCEDURE Add_Serie_To_Macroserie(macroserie NUMBER, serie_id NUMBER);
+  PROCEDURE Add_Documentary_To_Docuserie(docuserie_id NUMBER, documentary_id NUMBER);
+  PROCEDURE Add_Movie_To_Saga(saga_id NUMBER, movie_id NUMBER);
+  PROCEDURE Add_Serie_To_Macroserie(macroserie_id NUMBER, serie_id NUMBER);
   PROCEDURE Insert_Download_Doc(documentary_language_id NUMBER, client_id NUMBER);
   PROCEDURE Insert_Download_Movie(movie_language_id NUMBER, client_id NUMBER);
   PROCEDURE Insert_Download_Serie(serie_language_id NUMBER, client_id NUMBER);

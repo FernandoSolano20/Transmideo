@@ -35,12 +35,12 @@ Begin
   transmideo.Insert_Serie('Serie nueva', 'Serie buena', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres_serie, formats_serie, languages_serie, castings_serie); 
   transmideo.Insert_Documentary('Documental nuevo', 'Documental bueno', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres_documentary, formats_documentary, languages_documentary, castings_documentary); 
   
-  SELECT m.id INTO new_movie_id
+  SELECT ml.id INTO new_movie_id
   FROM movie m
   INNER JOIN movie_language ml ON ml.movie_id = m.id
   WHERE m.title = 'Pelicula nueva' AND ROWNUM = 1;
 
-  SELECT s.id INTO new_serie_id
+  SELECT sl.id INTO new_serie_id
   FROM serie s
   INNER JOIN serie_language sl ON sl.serie_id = s.id
   WHERE s.title = 'Serie nueva' AND ROWNUM = 1;
