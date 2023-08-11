@@ -12,3 +12,4 @@ start insert_reproduction_documentary;
 start insert_reproduction_movie;
 start insert_reproduction_serie;
 start insert_serie;
+start update_client_status;

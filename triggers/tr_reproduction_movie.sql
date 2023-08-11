@@ -1,5 +1,5 @@
-CREATE OR REPLACE TRIGGER insert_reproduction_doc_trg
-BEFORE INSERT ON reproduction_documentary
+CREATE OR REPLACE TRIGGER insert_reproduction_movie_trg
+BEFORE INSERT ON reproduction_movie
 FOR EACH ROW
 DECLARE
   CURSOR client_cursor IS
@@ -16,11 +16,9 @@ BEGIN
   FETCH client_cursor INTO max_expiration_day, account_status;
   CLOSE client_cursor;
 
-  IF max_expiration_day < SYSDATE THEN
+  IF max_expiration_day < SYSDATE OR account_status = 2 THEN
     IF account_status = 1 THEN
-      UPDATE client
-        SET account_status_id = 2
-        WHERE id = :NEW.client_id;
+      Update_Client_Status(:NEW.client_id, 2);
     END IF;
     RAISE_APPLICATION_ERROR(-20502,'Su membresia ha expirado.');
   END IF;

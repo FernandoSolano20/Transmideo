@@ -1,6 +1,7 @@
-start validate_download_documentary;
-start validate_download_movie;
-start validate_download_serie;
-start validate_reproduction_documentary;
-start validate_reproduction_movie;
-start validate_reproduction_serie;
+start tr_download_documentary;
+start tr_download_movie;
+start tr_download_serie;
+start tr_reproduction_documentary;
+start tr_reproduction_movie;
+start tr_reproduction_serie;
+start tr_membership_paid;

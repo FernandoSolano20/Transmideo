@@ -18,7 +18,7 @@ BEGIN
 
   last_id := Get_Last_Id(last_id);
 
-  INSERT INTO client VALUES (last_id, name, last_name, direction, phone, birth, email, SYSDATE, country_id, account_type_id);
+  INSERT INTO client VALUES (last_id, name, last_name, direction, phone, birth, email, SYSDATE, country_id, account_type_id, 2);
   COMMIT;
 END Insert_Client;
 /
