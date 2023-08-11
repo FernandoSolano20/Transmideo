@@ -5,6 +5,9 @@ CREATE OR REPLACE PROCEDURE Insert_Membership(
   CURSOR max_id_membership_cursor IS
   SELECT MAX(id) FROM membership;
   last_id membership.id%TYPE := NULL;
+
+  foreign_violated EXCEPTION;
+  PRAGMA EXCEPTION_INIT(foreign_violated, -2291);
 BEGIN
   OPEN max_id_membership_cursor;
   FETCH max_id_membership_cursor INTO last_id;
@@ -14,5 +17,13 @@ BEGIN
 
   INSERT INTO membership VALUES (last_id, ADD_MONTHS(SYSDATE, 12), price, client_id);
   COMMIT;
+
+  EXCEPTION
+    WHEN foreign_violated THEN
+      ROLLBACK;
+      DBMS_OUTPUT.PUT_LINE('Ocurrio un error el id del client no existe.');
+    WHEN OTHERS THEN
+      ROLLBACK;
+      DBMS_OUTPUT.PUT_LINE('Ocurrio un error.');
 END Insert_Membership;
 /
