@@ -30,7 +30,7 @@ CREATE OR REPLACE TRIGGER on_membership_paid_trg
     DBMS_OUTPUT.PUT_LINE('Max day' || expiration_day);
     IF expiration_day >= SYSDATE THEN
       DBMS_OUTPUT.PUT_LINE('Issue');
-      RAISE_APPLICATION_ERROR(-20502,'Su membresia aun no ha expirado.');
+      RAISE_APPLICATION_ERROR(-20503,'Su membresia aun no ha expirado.');
     END IF;
 
     IF expiration_day <> NULL THEN

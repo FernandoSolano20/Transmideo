@@ -49,6 +49,7 @@ BEGIN
   INSERT INTO documentary VALUES (new_documentary_id, title, abstract, begin_date, length, seasons, chapters, rated_id, docuserie_id);
   COMMIT;
 
+
   BEGIN
     FOR i IN 1..genres.COUNT LOOP
       INSERT INTO documentary_genre VALUES (genres(i), new_documentary_id);
@@ -78,6 +79,7 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de formatos y documental.');
   END;
 
+
   BEGIN
     FOR i IN 1..languages.COUNT LOOP
       INSERT INTO documentary_language VALUES (new_documentary_language_id, languages(i).audio_id, languages(i).subtitles_id, new_documentary_id);
@@ -92,6 +94,7 @@ BEGIN
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de lenguajes y documental.');
   END;
+
 
   BEGIN
     FOR i IN 1..castings.COUNT LOOP
@@ -110,6 +113,7 @@ BEGIN
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y documental.');
   END;
+
 
   EXCEPTION
     WHEN foreign_violated THEN
