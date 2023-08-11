@@ -16,11 +16,19 @@ BEGIN
   FETCH client_cursor INTO max_expiration_day, account_status;
   CLOSE client_cursor;
 
-  IF max_expiration_day < SYSDATE OR account_status = 2 THEN
+  IF max_expiration_day < SYSDATE THEN
     IF account_status = 1 THEN
       Update_Client_Status(:NEW.client_id, 2);
     END IF;
     RAISE_APPLICATION_ERROR(-20502,'Su membresia ha expirado.');
+  END IF;
+
+  IF max_expiration_day IS NULL THEN
+    RAISE_APPLICATION_ERROR(-20504,'No ha pagado su membresia.');
+  END IF;
+
+  IF account_status = 2 THEN
+    RAISE_APPLICATION_ERROR(-20501,'Su cuenta esta inactiva.');
   END IF;
 END;
 /

@@ -23,13 +23,14 @@ BEGIN
 
   INSERT INTO client VALUES (last_id, name, last_name, direction, phone, birth, email, SYSDATE, country_id, account_type_id, 2);
   COMMIT;
+  DBMS_OUTPUT.PUT_LINE('Cliente agregado con exito.');
 
   EXCEPTION
     WHEN foreign_violated THEN
       DBMS_OUTPUT.PUT_LINE('Ocurrio un error al insertar al cliente con las llaves foraneas.');
       ROLLBACK;
     WHEN OTHERS THEN
-      DBMS_OUTPUT.PUT_LINE('Ocurrio un error.');
+      DBMS_OUTPUT.PUT_LINE('Ocurrio un error, no se realizo la transaccion.');
       ROLLBACK;
 END Insert_Client;
 /

@@ -19,16 +19,17 @@ BEGIN
 
   INSERT INTO membership VALUES (last_id, ADD_MONTHS(SYSDATE, 12), price, client_id);
   COMMIT;
+  DBMS_OUTPUT.PUT_LINE('Membresia pagada con existo.');
 
   EXCEPTION
     WHEN foreign_violated THEN
       ROLLBACK;
-      DBMS_OUTPUT.PUT_LINE('Ocurrio un error el id del client no existe.');
+      DBMS_OUTPUT.PUT_LINE('Ocurrio un error el id del client no existe, no se realizo la transaccion.');
     WHEN not_expired_membership THEN
       ROLLBACK;
-      DBMS_OUTPUT.PUT_LINE('Su membresia no ha expirado aun.');
+      DBMS_OUTPUT.PUT_LINE('Su membresia no ha expirado aun, no se realizo la transaccion.');
     WHEN OTHERS THEN
       ROLLBACK;
-      DBMS_OUTPUT.PUT_LINE('Ocurrio un error.');
+      DBMS_OUTPUT.PUT_LINE('Ocurrio un error, no se realizo la transaccion.');
 END Insert_Membership;
 /

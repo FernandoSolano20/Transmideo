@@ -112,6 +112,7 @@ BEGIN
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y pelicula.');
   END;
+  DBMS_OUTPUT.PUT_LINE('Pelicula agregada con existo.');
 
   
   EXCEPTION
@@ -120,6 +121,6 @@ BEGIN
       DBMS_OUTPUT.PUT_LINE('La pelicula no fue creado con exito, revise las llaves foraneas.');
     WHEN OTHERS THEN
       ROLLBACK;
-      DBMS_OUTPUT.PUT_LINE('Ocurrio un error con pelicula.');
+      DBMS_OUTPUT.PUT_LINE('Ocurrio un error con pelicula, no se realizo la transaccion.');
 END Insert_Movie;
 /

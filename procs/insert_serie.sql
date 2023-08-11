@@ -116,6 +116,7 @@ BEGIN
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y serie.');
   END;
+  DBMS_OUTPUT.PUT_LINE('Serie agregada con existo.');
 
   EXCEPTION
     WHEN foreign_violated THEN
@@ -123,6 +124,6 @@ BEGIN
       DBMS_OUTPUT.PUT_LINE('La serie no fue creado con exito, revise las llaves foraneas.');
     WHEN OTHERS THEN
       ROLLBACK;
-      DBMS_OUTPUT.PUT_LINE('Ocurrio un error con serie.');
+      DBMS_OUTPUT.PUT_LINE('Ocurrio un error con serie, no se realizo la transaccion.');
 END Insert_Serie;
 /

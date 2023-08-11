@@ -113,6 +113,7 @@ BEGIN
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y documental.');
   END;
+  DBMS_OUTPUT.PUT_LINE('Documental agregado exito.');
 
 
   EXCEPTION
@@ -121,6 +122,6 @@ BEGIN
       DBMS_OUTPUT.PUT_LINE('El documental no fue creado con exito, revise las llaves foraneas.');
     WHEN OTHERS THEN
       ROLLBACK;
-      DBMS_OUTPUT.PUT_LINE('Ocurrio un error con documental.');
+      DBMS_OUTPUT.PUT_LINE('Ocurrio un error con documental, no se realizo la transaccion.');
 END Insert_Documentary;
 /

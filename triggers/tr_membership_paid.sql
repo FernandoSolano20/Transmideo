@@ -26,18 +26,11 @@ CREATE OR REPLACE TRIGGER on_membership_paid_trg
       EXIT WHEN client = :NEW.client_id OR client_cursor%NOTFOUND;
     END LOOP;
 
-    DBMS_OUTPUT.PUT_LINE(SYSDATE);
-    DBMS_OUTPUT.PUT_LINE('Max day' || expiration_day);
     IF expiration_day >= SYSDATE THEN
-      DBMS_OUTPUT.PUT_LINE('Issue');
       RAISE_APPLICATION_ERROR(-20503,'Su membresia aun no ha expirado.');
     END IF;
 
-    IF expiration_day <> NULL THEN
-      UPDATE client
-        SET account_status_id = 1
-        WHERE id = :NEW.client_id;
-    END IF;
+    Update_Client_Status(:NEW.client_id, 1);
   END BEFORE EACH ROW;
 
 
