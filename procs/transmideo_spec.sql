@@ -1,4 +1,7 @@
 CREATE OR REPLACE PACKAGE transmideo IS
+  FUNCTION Get_Client_Id_By_Name(client_name VARCHAR2) RETURN NUMBER;
+  FUNCTION Get_Movie_Lng_By_Name(movie_name VARCHAR2) RETURN NUMBER;
+  FUNCTION Get_Serie_Lng_By_Name(serie_name VARCHAR2) RETURN NUMBER;
   PROCEDURE Update_Client_Status(client_id NUMBER, client_status NUMBER);
   PROCEDURE Add_Documentary_To_Docuserie(docuserie_id NUMBER, documentary_id NUMBER);
   PROCEDURE Add_Movie_To_Saga(saga_id NUMBER, movie_id NUMBER);

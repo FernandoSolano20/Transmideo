@@ -23,42 +23,30 @@ SQL> DECLARE
  22    transmideo.Insert_Client('Alfa', 'Alfa', 'Alfa city', '1111-1111', to_date('21/03/95','DD/MM/RR'), 'alfa@gmail.com', 1, 1);
  23    transmideo.Insert_Client('Beta', 'Beta', 'Beta city', '2222-2222', to_date('19/04/88','DD/MM/RR'), 'beta@gmail.com', 1, 1);
  24  
- 25    SELECT id INTO alfa_id
- 26    FROM client
- 27    WHERE name = 'Alfa';
- 28  
- 29    SELECT id INTO beta_id
- 30    FROM client
- 31    WHERE name = 'Beta';
+ 25    alfa_id := transmideo.Get_Client_Id_By_Name('Alfa');
+ 26    beta_id := transmideo.Get_Client_Id_By_Name('Beta');
+ 27  
+ 28    transmideo.Insert_Membership(15000, alfa_id);
+ 29    transmideo.Insert_Movie('Pelicula nueva', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres_movie, formats_movie, languages_movie, castings_movie);
+ 30    transmideo.Insert_Serie('Serie nueva', 'Serie buena', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres_serie, formats_serie, languages_serie, castings_serie);
+ 31    transmideo.Insert_Documentary('Documental nuevo', 'Documental bueno', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres_documentary, formats_documentary, languages_documentary, castings_documentary);
  32  
- 33    transmideo.Insert_Membership(15000, alfa_id);
- 34    transmideo.Insert_Movie('Pelicula nueva', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres_movie, formats_movie, languages_movie, castings_movie);
- 35    transmideo.Insert_Serie('Serie nueva', 'Serie buena', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres_serie, formats_serie, languages_serie, castings_serie);
- 36    transmideo.Insert_Documentary('Documental nuevo', 'Documental bueno', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres_documentary, formats_documentary, languages_documentary, castings_documentary);
- 37  
- 38    SELECT m.id INTO new_movie_id
- 39    FROM movie m
- 40    INNER JOIN movie_language ml ON ml.movie_id = m.id
- 41    WHERE m.title = 'Pelicula nueva' AND ROWNUM = 1;
- 42  
- 43    SELECT s.id INTO new_serie_id
- 44    FROM serie s
- 45    INNER JOIN serie_language sl ON sl.serie_id = s.id
- 46    WHERE s.title = 'Serie nueva' AND ROWNUM = 1;
- 47  
- 48    transmideo.Insert_Download_Movie(new_movie_id, alfa_id);
- 49    transmideo.Insert_Reproduction_Serie(new_serie_id, beta_id);
- 50  End;
- 51  /
-Cliente agregado con exito.                                                                         
-Cliente agregado con exito.                                                                         
-El cliente Alfa ahora esta Activo                                                                   
-Membresia pagada con existo.                                                                        
-Pelicula agregada con existo.                                                                       
-Serie agregada con existo.                                                                          
-Documental agregado exito.                                                                          
-Solictud de descarga creada con existo.                                                             
-El cliente no ha echo su primer pago, no se ha procesado la solicitud de reproduccion.              
+ 33    new_movie_id := transmideo.Get_Movie_Lng_By_Name('Pelicula nueva');
+ 34    new_serie_id := transmideo.Get_Serie_Lng_By_Name('Serie nueva');
+ 35  
+ 36    transmideo.Insert_Download_Movie(new_movie_id, alfa_id);
+ 37    transmideo.Insert_Reproduction_Serie(new_serie_id, beta_id);
+ 38  End;
+ 39  /
+Cliente Alfa agregado con exito.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+Cliente Beta agregado con exito.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+El cliente Alfa ahora esta Activo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+La membresia del cliente Alfa ha sido pagada con existo.                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+Pelicula agregada con existo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+Serie agregada con existo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+Documental agregado exito.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+Solicitud de descarga exitosa de Alfa para la pelicula Pelicula nueva                                                                                                                                                                                                                                                                                                                                                                                                                                               
+El cliente Beta no ha echo su primer pago, no se ha procesado la solicitud de reproduccion Serie nueva                                                                                                                                                                                                                                                                                                                                                                                                              
 
 PL/SQL procedure successfully completed.
 

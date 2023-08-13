@@ -203,6 +203,317 @@ CREATE OR REPLACE PACKAGE BODY transmideo IS
         DBMS_OUTPUT.PUT_LINE('Ocurrio un error, no se actualizo el estado del cliente ' || client_name);
   END Update_Client_Status;
 
+  PROCEDURE Insert_Documentary_Genres(documentary_id NUMBER, genres number_list) IS
+  BEGIN
+    FOR i IN 1..genres.COUNT LOOP
+      INSERT INTO documentary_genre VALUES (genres(i), documentary_id);
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los generos no fueron relacionados con documental con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de generos y documental.');
+  END Insert_Documentary_Genres;
+
+  PROCEDURE Insert_Documentary_Formats(documentary_id NUMBER, formats number_list) IS
+  BEGIN
+    FOR i IN 1..formats.COUNT LOOP
+      INSERT INTO documentary_format VALUES (formats(i), documentary_id);
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los formatos no fueron relacionados con documental con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de formatos y documental.');
+  END Insert_Documentary_Formats;
+
+  PROCEDURE Insert_Documentary_Languages(documentary_id NUMBER, languages language_list) IS
+    CURSOR max_id_language_cursor IS
+    SELECT MAX(id) FROM documentary_language;
+    last_documentary_language_id documentary_language.id%TYPE := NULL;
+    new_documentary_language_id documentary_language.id%TYPE := NULL;
+  BEGIN
+    OPEN max_id_language_cursor;
+    FETCH max_id_language_cursor INTO last_documentary_language_id;
+    CLOSE max_id_language_cursor;
+
+    new_documentary_language_id := Get_Last_Id(last_documentary_language_id);
+
+    FOR i IN 1..languages.COUNT LOOP
+      INSERT INTO documentary_language VALUES (new_documentary_language_id, languages(i).audio_id, languages(i).subtitles_id, documentary_id);
+      new_documentary_language_id := new_documentary_language_id + 1;
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los lenguajes no fueron relacionados con documental con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de lenguajes y documental.');
+  END Insert_Documentary_Languages;
+
+  PROCEDURE Insert_Documentary_Castings(documentary_id NUMBER, castings casting_list) IS
+    CURSOR max_id_casting_cursor IS
+    SELECT MAX(id) FROM cast_documentary;
+    last_documentary_casting_id cast_documentary.id%TYPE := NULL;
+    new_documentary_casting_id cast_documentary.id%TYPE := NULL;
+  BEGIN
+    OPEN max_id_casting_cursor;
+    FETCH max_id_casting_cursor INTO last_documentary_casting_id;
+    CLOSE max_id_casting_cursor;
+
+    new_documentary_casting_id := Get_Last_Id(last_documentary_casting_id);
+
+    FOR i IN 1..castings.COUNT LOOP
+      INSERT INTO cast_documentary VALUES (new_documentary_casting_id, castings(i).artist_id, documentary_id);
+      FOR j in 1..castings(i).roles.COUNT LOOP
+        INSERT INTO cast_documentary_role VALUES (new_documentary_casting_id, castings(i).roles(j));
+      END LOOP;
+      new_documentary_casting_id := new_documentary_casting_id + 1;
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('El reparto no fueron relacionados con documental con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y documental.');
+  END Insert_Documentary_Castings;
+
+  PROCEDURE Insert_Movie_Genres(movie_id NUMBER, genres number_list) IS
+  BEGIN
+    FOR i IN 1..genres.COUNT LOOP
+      INSERT INTO movie_genre VALUES (genres(i), movie_id);
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los generos no fueron relacionados con pelicula con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de generos y pelicula.');
+  END Insert_Movie_Genres;
+
+  PROCEDURE Insert_Movie_Formats(movie_id NUMBER, formats number_list) IS
+  BEGIN
+    FOR i IN 1..formats.COUNT LOOP
+      INSERT INTO movie_format VALUES (formats(i), movie_id);
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los formatos no fueron relacionados con pelicula con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de formatos y pelicula.');
+  END Insert_Movie_Formats;
+
+  PROCEDURE Insert_Movie_Languages(movie_id NUMBER, languages language_list) IS
+    CURSOR max_id_language_cursor IS
+    SELECT MAX(id) FROM movie_language;
+    last_movie_language_id movie_language.id%TYPE := NULL;
+    new_movie_language_id movie_language.id%TYPE := NULL;
+  BEGIN
+    OPEN max_id_language_cursor;
+    FETCH max_id_language_cursor INTO last_movie_language_id;
+    CLOSE max_id_language_cursor;
+
+    new_movie_language_id := Get_Last_Id(last_movie_language_id);
+
+    FOR i IN 1..languages.COUNT LOOP
+      INSERT INTO movie_language VALUES (new_movie_language_id, languages(i).audio_id, languages(i).subtitles_id, movie_id);
+      new_movie_language_id := new_movie_language_id + 1;
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los lenguajes no fueron relacionados con pelicula con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de lenguajes y pelicula.');
+  END Insert_Movie_Languages;
+
+  PROCEDURE Insert_Movie_Castings(movie_id NUMBER, castings casting_list) IS
+    CURSOR max_id_casting_cursor IS
+    SELECT MAX(id) FROM cast_movie;
+    last_movie_casting_id cast_movie.id%TYPE := NULL;
+    new_movie_casting_id cast_movie.id%TYPE := NULL;
+  BEGIN
+    OPEN max_id_casting_cursor;
+    FETCH max_id_casting_cursor INTO last_movie_casting_id;
+    CLOSE max_id_casting_cursor;
+
+    new_movie_casting_id := Get_Last_Id(last_movie_casting_id);
+
+    FOR i IN 1..castings.COUNT LOOP
+      INSERT INTO cast_movie VALUES (new_movie_casting_id, castings(i).artist_id, movie_id);
+      FOR j in 1..castings(i).roles.COUNT LOOP
+        INSERT INTO cast_movie_role VALUES (new_movie_casting_id, castings(i).roles(j));
+      END LOOP;
+      new_movie_casting_id := new_movie_casting_id + 1;
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('El reparto no fueron relacionados con pelicula con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y pelicula.');
+  END Insert_Movie_Castings;
+
+  PROCEDURE Insert_Serie_Genres(serie_id NUMBER, genres number_list) IS
+  BEGIN
+    FOR i IN 1..genres.COUNT LOOP
+      INSERT INTO serie_genre VALUES (genres(i), serie_id);
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los generos no fueron relacionados con serie con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de generos y serie.');
+  END Insert_Serie_Genres;
+
+  PROCEDURE Insert_Serie_Formats(serie_id NUMBER, formats number_list) IS
+  BEGIN
+    FOR i IN 1..formats.COUNT LOOP
+      INSERT INTO serie_format VALUES (formats(i), serie_id);
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los formatos no fueron relacionados con serie con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de formatos y serie.');
+  END Insert_Serie_Formats;
+
+  PROCEDURE Insert_Serie_Language(serie_id NUMBER, languages language_list) IS
+    CURSOR max_id_language_cursor IS
+    SELECT MAX(id) FROM serie_language;
+    last_serie_language_id serie_language.id%TYPE := NULL;
+    new_serie_language_id serie_language.id%TYPE := NULL;
+  BEGIN
+    OPEN max_id_language_cursor;
+    FETCH max_id_language_cursor INTO last_serie_language_id;
+    CLOSE max_id_language_cursor;
+
+    new_serie_language_id := Get_Last_Id(last_serie_language_id);
+
+    FOR i IN 1..languages.COUNT LOOP
+      INSERT INTO serie_language VALUES (new_serie_language_id, languages(i).audio_id, languages(i).subtitles_id, serie_id);
+      new_serie_language_id := new_serie_language_id + 1;
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Los lenguajes no fueron relacionados con serie con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de lenguajes y serie.');
+  END Insert_Serie_Language;
+
+  PROCEDURE Insert_Serie_Castings(serie_id NUMBER, castings casting_list) IS
+    CURSOR max_id_casting_cursor IS
+    SELECT MAX(id) FROM cast_serie;
+    last_serie_casting_id cast_serie.id%TYPE := NULL;
+    new_serie_casting_id cast_serie.id%TYPE := NULL;
+  BEGIN
+    OPEN max_id_casting_cursor;
+    FETCH max_id_casting_cursor INTO last_serie_casting_id;
+    CLOSE max_id_casting_cursor;
+
+    new_serie_casting_id := Get_Last_Id(last_serie_casting_id);
+
+    FOR i IN 1..castings.COUNT LOOP
+      INSERT INTO cast_serie VALUES (new_serie_casting_id, castings(i).artist_id, serie_id);
+      FOR j in 1..castings(i).roles.COUNT LOOP
+        INSERT INTO cast_serie_role VALUES (new_serie_casting_id, castings(i).roles(j));
+      END LOOP;
+      new_serie_casting_id := new_serie_casting_id + 1;
+    END LOOP;
+    COMMIT;
+    EXCEPTION
+      WHEN FOREIGN_VIOLATED THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('El reparto no fueron relacionados con serie con exito.');
+      WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y serie.');
+  END Insert_Serie_Castings;
+
+  FUNCTION Get_Client_Id_By_Name(client_name VARCHAR2) RETURN NUMBER IS
+    client_id client.id%TYPE := NULL;
+  BEGIN
+    SELECT id INTO client_id
+    FROM client
+    WHERE name = client_name;
+    
+    RETURN client_id;
+
+    EXCEPTION
+      WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE ('No se encontro el cliente');
+        RETURN NULL;
+      WHEN TOO_MANY_ROWS THEN
+        DBMS_OUTPUT.PUT_LINE ('Muchos clientes con ese nombre');
+        RETURN NULL;
+  END Get_Client_Id_By_Name;
+
+  FUNCTION Get_Movie_Lng_By_Name(movie_name VARCHAR2) RETURN NUMBER IS
+    movie_language_id movie_language.id%TYPE := NULL;
+  BEGIN
+    SELECT ml.id INTO movie_language_id
+    FROM movie m
+    INNER JOIN movie_language ml ON ml.movie_id = m.id
+    WHERE m.title = movie_name AND ROWNUM = 1;
+    
+    RETURN movie_language_id;
+
+    EXCEPTION
+      WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE ('No se encontro la pelicula');
+        RETURN NULL;
+      WHEN TOO_MANY_ROWS THEN
+        DBMS_OUTPUT.PUT_LINE ('Muchas peliculas con ese nombre');
+        RETURN NULL;
+  END Get_Movie_Lng_By_Name;
+
+  FUNCTION Get_Serie_Lng_By_Name(serie_name VARCHAR2) RETURN NUMBER IS
+    serie_language_id serie_language.id%TYPE := NULL;
+  BEGIN
+    SELECT sl.id INTO serie_language_id
+    FROM serie s
+    INNER JOIN serie_language sl ON sl.serie_id = s.id
+    WHERE s.title = serie_name AND ROWNUM = 1;
+    
+    RETURN serie_language_id;
+
+    EXCEPTION
+      WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE ('No se encontro la serie');
+        RETURN NULL;
+      WHEN TOO_MANY_ROWS THEN
+        DBMS_OUTPUT.PUT_LINE ('Muchos series con ese nombre');
+        RETURN NULL;
+  END Get_Serie_Lng_By_Name;
+
   PROCEDURE Add_Documentary_To_Docuserie(
       docuserie_id NUMBER,
       documentary_id NUMBER
@@ -661,102 +972,22 @@ CREATE OR REPLACE PACKAGE BODY transmideo IS
     SELECT MAX(id) FROM documentary;
     last_documentary_id documentary.id%TYPE := NULL;
     new_documentary_id documentary.id%TYPE := NULL;
-
-    CURSOR max_id_casting_cursor IS
-    SELECT MAX(id) FROM cast_documentary;
-    last_documentary_casting_id cast_documentary.id%TYPE := NULL;
-    new_documentary_casting_id cast_documentary.id%TYPE := NULL;
-
-    CURSOR max_id_language_cursor IS
-    SELECT MAX(id) FROM documentary_language;
-    last_documentary_language_id documentary_language.id%TYPE := NULL;
-    new_documentary_language_id documentary_language.id%TYPE := NULL;
   BEGIN
     OPEN max_id_documentary_cursor;
     FETCH max_id_documentary_cursor INTO last_documentary_id;
     CLOSE max_id_documentary_cursor;
 
-    OPEN max_id_casting_cursor;
-    FETCH max_id_casting_cursor INTO last_documentary_casting_id;
-    CLOSE max_id_casting_cursor;
-
-    OPEN max_id_language_cursor;
-    FETCH max_id_language_cursor INTO last_documentary_language_id;
-    CLOSE max_id_language_cursor;
-
     new_documentary_id := Get_Last_Id(last_documentary_id);
-    new_documentary_casting_id := Get_Last_Id(last_documentary_casting_id);
-    new_documentary_language_id := Get_Last_Id(last_documentary_language_id);
 
     INSERT INTO documentary VALUES (new_documentary_id, title, abstract, begin_date, length, seasons, chapters, rated_id, docuserie_id);
     COMMIT;
 
-
-    BEGIN
-      FOR i IN 1..genres.COUNT LOOP
-        INSERT INTO documentary_genre VALUES (genres(i), new_documentary_id);
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los generos no fueron relacionados con documental con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de generos y documental.');
-    END;
-
-
-    BEGIN
-      FOR i IN 1..formats.COUNT LOOP
-        INSERT INTO documentary_format VALUES (formats(i), new_documentary_id);
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los formatos no fueron relacionados con documental con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de formatos y documental.');
-    END;
-
-
-    BEGIN
-      FOR i IN 1..languages.COUNT LOOP
-        INSERT INTO documentary_language VALUES (new_documentary_language_id, languages(i).audio_id, languages(i).subtitles_id, new_documentary_id);
-        new_documentary_language_id := new_documentary_language_id + 1;
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los lenguajes no fueron relacionados con documental con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de lenguajes y documental.');
-    END;
-
-
-    BEGIN
-      FOR i IN 1..castings.COUNT LOOP
-        INSERT INTO cast_documentary VALUES (new_documentary_casting_id, castings(i).artist_id, new_documentary_id);
-        FOR j in 1..castings(i).roles.COUNT LOOP
-          INSERT INTO cast_documentary_role VALUES (new_documentary_casting_id, castings(i).roles(j));
-        END LOOP;
-        new_documentary_casting_id := new_documentary_casting_id + 1;
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('El reparto no fueron relacionados con documental con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y documental.');
-    END;
+    Insert_Documentary_Genres(new_documentary_id, genres);
+    Insert_Documentary_Formats(new_documentary_id, formats);
+    Insert_Documentary_Languages(new_documentary_id, languages);
+    Insert_Documentary_Castings(new_documentary_id, castings);
+    
     DBMS_OUTPUT.PUT_LINE('Documental agregado exito.');
-
 
     EXCEPTION
       WHEN FOREIGN_VIOLATED THEN
@@ -785,102 +1016,23 @@ CREATE OR REPLACE PACKAGE BODY transmideo IS
     SELECT MAX(id) FROM movie;
     last_movie_id movie.id%TYPE := NULL;
     new_movie_id movie.id%TYPE := NULL;
-
-    CURSOR max_id_casting_cursor IS
-    SELECT MAX(id) FROM cast_movie;
-    last_movie_casting_id cast_movie.id%TYPE := NULL;
-    new_movie_casting_id cast_movie.id%TYPE := NULL;
-
-    CURSOR max_id_language_cursor IS
-    SELECT MAX(id) FROM movie_language;
-    last_movie_language_id movie_language.id%TYPE := NULL;
-    new_movie_language_id movie_language.id%TYPE := NULL;
   BEGIN
     OPEN max_id_movie_cursor;
     FETCH max_id_movie_cursor INTO last_movie_id;
     CLOSE max_id_movie_cursor;
 
-    OPEN max_id_casting_cursor;
-    FETCH max_id_casting_cursor INTO last_movie_casting_id;
-    CLOSE max_id_casting_cursor;
-
-    OPEN max_id_language_cursor;
-    FETCH max_id_language_cursor INTO last_movie_language_id;
-    CLOSE max_id_language_cursor;
-
     new_movie_id := Get_Last_Id(last_movie_id);
-    new_movie_casting_id := Get_Last_Id(last_movie_casting_id);
-    new_movie_language_id := Get_Last_Id(last_movie_language_id);
-
+    
     INSERT INTO movie VALUES (new_movie_id, title, year, length, country_id, studio_id, rated_id, saga_id);
     COMMIT;
-    
-    BEGIN
-      FOR i IN 1..genres.COUNT LOOP
-        INSERT INTO movie_genre VALUES (genres(i), new_movie_id);
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los generos no fueron relacionados con pelicula con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de generos y pelicula.');
-    END;
 
+    Insert_Movie_Genres(new_movie_id, genres);
+    Insert_Movie_Formats(new_movie_id, formats);
+    Insert_Movie_Languages(new_movie_id, languages);
+    Insert_Movie_Castings(new_movie_id, castings);
 
-    BEGIN
-      FOR i IN 1..formats.COUNT LOOP
-        INSERT INTO movie_format VALUES (formats(i), new_movie_id);
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los formatos no fueron relacionados con pelicula con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de formatos y pelicula.');
-    END;
-
-
-    BEGIN
-      FOR i IN 1..languages.COUNT LOOP
-        INSERT INTO movie_language VALUES (new_movie_language_id, languages(i).audio_id, languages(i).subtitles_id, new_movie_id);
-        new_movie_language_id := new_movie_language_id + 1;
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los lenguajes no fueron relacionados con pelicula con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de lenguajes y pelicula.');
-    END;
-
-    
-    BEGIN
-      FOR i IN 1..castings.COUNT LOOP
-        INSERT INTO cast_movie VALUES (new_movie_casting_id, castings(i).artist_id, new_movie_id);
-        FOR j in 1..castings(i).roles.COUNT LOOP
-          INSERT INTO cast_movie_role VALUES (new_movie_casting_id, castings(i).roles(j));
-        END LOOP;
-        new_movie_casting_id := new_movie_casting_id + 1;
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('El reparto no fueron relacionados con pelicula con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y pelicula.');
-    END;
     DBMS_OUTPUT.PUT_LINE('Pelicula agregada con existo.');
 
-    
     EXCEPTION
       WHEN FOREIGN_VIOLATED THEN
         ROLLBACK;
@@ -908,103 +1060,22 @@ CREATE OR REPLACE PACKAGE BODY transmideo IS
     CURSOR max_id_serie_cursor IS
     SELECT MAX(id) FROM serie;
     last_serie_id serie.id%TYPE := NULL;
-    new_serie_id serie.id%TYPE := NULL;
-
-
-    CURSOR max_id_casting_cursor IS
-    SELECT MAX(id) FROM cast_serie;
-    last_serie_casting_id cast_serie.id%TYPE := NULL;
-    new_serie_casting_id cast_serie.id%TYPE := NULL;
-
-    CURSOR max_id_language_cursor IS
-    SELECT MAX(id) FROM serie_language;
-    last_serie_language_id serie_language.id%TYPE := NULL;
-    new_serie_language_id serie_language.id%TYPE := NULL;
+    new_serie_id serie.id%TYPE := NULL;    
   BEGIN
     OPEN max_id_serie_cursor;
     FETCH max_id_serie_cursor INTO last_serie_id;
     CLOSE max_id_serie_cursor;
 
-    OPEN max_id_casting_cursor;
-    FETCH max_id_casting_cursor INTO last_serie_casting_id;
-    CLOSE max_id_casting_cursor;
-
-    OPEN max_id_language_cursor;
-    FETCH max_id_language_cursor INTO last_serie_language_id;
-    CLOSE max_id_language_cursor;
-
     new_serie_id := Get_Last_Id(last_serie_id);
-    new_serie_casting_id := Get_Last_Id(last_serie_casting_id);
-    new_serie_language_id := Get_Last_Id(last_serie_language_id);
-
 
     INSERT INTO serie VALUES (new_serie_id, title, abstract, begin_date, length, seasons, chapters, rated_id, macroserie_id, country_id);
     COMMIT;
 
-
-    BEGIN
-      FOR i IN 1..genres.COUNT LOOP
-        INSERT INTO serie_genre VALUES (genres(i), new_serie_id);
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los generos no fueron relacionados con serie con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de generos y serie.');
-    END;
-
+    Insert_Serie_Genres(new_serie_id, genres);
+    Insert_Serie_Formats(new_serie_id, formats);
+    Insert_Serie_Language(new_serie_id, languages);
+    Insert_Serie_Castings(new_serie_id, castings);
     
-    BEGIN
-      FOR i IN 1..formats.COUNT LOOP
-        INSERT INTO serie_format VALUES (formats(i), new_serie_id);
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los formatos no fueron relacionados con serie con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de formatos y serie.');
-    END;
-
-    
-    BEGIN
-      FOR i IN 1..languages.COUNT LOOP
-        INSERT INTO serie_language VALUES (new_serie_language_id, languages(i).audio_id, languages(i).subtitles_id, new_serie_id);
-        new_serie_language_id := new_serie_language_id + 1;
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Los lenguajes no fueron relacionados con serie con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de lenguajes y serie.');
-    END;
-
-    
-    BEGIN
-      FOR i IN 1..castings.COUNT LOOP
-        INSERT INTO cast_serie VALUES (new_serie_casting_id, castings(i).artist_id, new_serie_id);
-        FOR j in 1..castings(i).roles.COUNT LOOP
-          INSERT INTO cast_serie_role VALUES (new_serie_casting_id, castings(i).roles(j));
-        END LOOP;
-        new_serie_casting_id := new_serie_casting_id + 1;
-      END LOOP;
-      COMMIT;
-      EXCEPTION
-        WHEN FOREIGN_VIOLATED THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('El reparto no fueron relacionados con serie con exito.');
-        WHEN OTHERS THEN
-          ROLLBACK;
-          DBMS_OUTPUT.PUT_LINE('Ocurrio un error con la relacion de reparto y serie.');
-    END;
     DBMS_OUTPUT.PUT_LINE('Serie agregada con existo.');
 
     EXCEPTION

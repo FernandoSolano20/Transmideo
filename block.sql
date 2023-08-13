@@ -22,28 +22,16 @@ Begin
   transmideo.Insert_Client('Alfa', 'Alfa', 'Alfa city', '1111-1111', to_date('21/03/95','DD/MM/RR'), 'alfa@gmail.com', 1, 1); 
   transmideo.Insert_Client('Beta', 'Beta', 'Beta city', '2222-2222', to_date('19/04/88','DD/MM/RR'), 'beta@gmail.com', 1, 1);
 
-  SELECT id INTO alfa_id
-  FROM client
-  WHERE name = 'Alfa';
+  alfa_id := transmideo.Get_Client_Id_By_Name('Alfa');
+  beta_id := transmideo.Get_Client_Id_By_Name('Beta');
   
-  SELECT id INTO beta_id
-  FROM client
-  WHERE name = 'Beta';
-
   transmideo.Insert_Membership(15000, alfa_id);
   transmideo.Insert_Movie('Pelicula nueva', to_date('15/06/87','DD/MM/RR'), 254, 3, 10, 2, genres_movie, formats_movie, languages_movie, castings_movie); 
   transmideo.Insert_Serie('Serie nueva', 'Serie buena', to_date('15/06/87','DD/MM/RR'), 254, 10, 269, 3, 2, genres_serie, formats_serie, languages_serie, castings_serie); 
   transmideo.Insert_Documentary('Documental nuevo', 'Documental bueno', to_date('26/09/79','DD/MM/RR'), 158, 4, 58, 1, genres_documentary, formats_documentary, languages_documentary, castings_documentary); 
   
-  SELECT ml.id INTO new_movie_id
-  FROM movie m
-  INNER JOIN movie_language ml ON ml.movie_id = m.id
-  WHERE m.title = 'Pelicula nueva' AND ROWNUM = 1;
-
-  SELECT sl.id INTO new_serie_id
-  FROM serie s
-  INNER JOIN serie_language sl ON sl.serie_id = s.id
-  WHERE s.title = 'Serie nueva' AND ROWNUM = 1;
+  new_movie_id := transmideo.Get_Movie_Lng_By_Name('Pelicula nueva');
+  new_serie_id := transmideo.Get_Serie_Lng_By_Name('Serie nueva');
 
   transmideo.Insert_Download_Movie(new_movie_id, alfa_id);
   transmideo.Insert_Reproduction_Serie(new_serie_id, beta_id);
