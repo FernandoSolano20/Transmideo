@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F30AC223-1F55-9DB8-E12B-4E4C4149F31D" name="documentary_language">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de documentales con el lenguaje]]></comment>
 <generatorID>4DFCD052-AABE-CC7F-DB4B-51957137069A</generatorID>
+<notes><![CDATA[Ejemplos: Planet Earth con audio ingles y subtitulo español, Blackfish con audio portugués  y subtitulo español]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>doc_lang</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="id" id="42A6E51E-3BD7-C4E5-DA30-B57995E21AA3">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del lenguaje de el documental, representa un número único para identificarla]]></comment>
 <generatorID>E94ADA6C-77A1-79A0-441A-1542C6687DDD</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +27,9 @@
 <Column name="audio_id" id="4F95FF32-C565-6B3A-A4B7-268DFA45124D">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el audio que se va a relacionar con el documental.]]></comment>
 <generatorID>E2F6139E-192E-48DB-2DD4-DE981CDF0EC8</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -38,7 +44,9 @@
 <Column name="subtitles_id" id="D171FD3C-5263-382A-3281-89B498C0CDEA">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa si el documental tiene subtítulos.]]></comment>
 <generatorID>87F94EE3-295E-4899-D238-2B4CB711DB1E</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -54,7 +62,9 @@
 <Column name="documentary_id" id="09912775-3B44-EDDB-17D1-A9BD8D635678">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el documental.]]></comment>
 <generatorID>D9A127A0-FE85-C0C5-A4C8-F88EC5CC4470</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

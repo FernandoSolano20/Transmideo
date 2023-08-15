@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EBE232C8-80F5-97D7-4398-34E213C095C4" name="gender">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que funciona como catálogo para los sexos]]></comment>
 <generatorID>864A5A9D-7E8C-038A-E536-F6F926E8E2B2</generatorID>
+<notes><![CDATA[Ejemplos: Masculino y Femenino]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="A2C76632-D820-9CAE-6D57-B25ED0035C85">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria que es un número único para saber el sexo]]></comment>
 <generatorID>96A9FFD9-B260-B000-E791-BB8FF220FB2B</generatorID>
+<notes><![CDATA[Ejemplos: 1,2]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="name" id="15ACAF4C-FA1E-FCD1-BBF6-B680F9932A0F">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el nombre del sexo.]]></comment>
 <generatorID>DD25F17F-30CB-0AB3-746A-F85A1AD3251F</generatorID>
+<notes><![CDATA[Ejemplos: Masculino, Femenino]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

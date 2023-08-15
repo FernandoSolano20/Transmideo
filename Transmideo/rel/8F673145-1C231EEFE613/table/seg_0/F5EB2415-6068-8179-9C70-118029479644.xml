@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5EB2415-6068-8179-9C70-118029479644" name="cast_documentary_role">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de documentales, reparto y role]]></comment>
 <generatorID>1019D0B5-52F8-2239-6C64-886C4E935478</generatorID>
+<notes><![CDATA[Ejemplos: Planet Earth con Leonardo DiCaprio como director y actor, Blackfish con Robert De Niro como actor]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>cast_doc_role</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="cast_documentary_id" id="2BA9A152-0303-766D-0E79-B4D3FC575236">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del reparto, documental y role, representa un número único para identificarla]]></comment>
 <generatorID>7E35AABD-6CEF-550E-0E63-02D89CC1E580</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 representando el id del reparto y documental.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -27,7 +31,9 @@
 <Column name="role_id" id="70BC52AB-F9E2-6A00-0820-390F3B47BA92">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del reparto, documental y role, representa un número único para identificarla]]></comment>
 <generatorID>E918CA03-93BC-109B-CC74-C9CEE0E05155</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 representando el role]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

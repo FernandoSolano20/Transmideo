@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB734D48-3CF5-AF0A-DE18-A56DCC5AED1E" name="artist">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa el artista.]]></comment>
 <generatorID>D85296C4-F7A7-6D04-6C80-F88833C2BFF1</generatorID>
+<notes><![CDATA[Ejemplos: Leo DiCaprio, Robert De Niro]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="5FC22CD6-A914-4ACB-A1AD-DD05829A3A93">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del artista, representa un número único para identificarlo]]></comment>
 <generatorID>532755D4-A8A6-A67C-F322-69E2877C3AC6</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="name" id="7D5EDFA5-7421-C560-9D32-64B838885FAB">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta el nombre del artista.]]></comment>
 <generatorID>6B6A5800-CA4C-16B2-FA1D-5AF88E1F0E58</generatorID>
+<notes><![CDATA[Ejemplos: Leonardo o Robert]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="last_name" id="25A2D858-2330-5A77-C3F1-C5F822C6EAA6">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta el apellido del artista.]]></comment>
 <generatorID>C054E0F4-F44D-3240-F1A6-C4236BC6F21F</generatorID>
+<notes><![CDATA[Ejemplos: DiCaprio o De Niro]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +54,9 @@
 <Column name="birth" id="63BD79F4-F4E5-0A95-352F-68EC6460F370">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta el año de nacimiento del artista.]]></comment>
 <generatorID>9FDCD74F-13D7-CA69-27D0-440578591466</generatorID>
+<notes><![CDATA[Ejemplos: 16/11/75 o 06/01/94]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,7 +67,9 @@
 <Column name="country_id" id="5383925A-799A-E6BF-1D0E-C6043E2649C9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el país del artista.]]></comment>
 <generatorID>0DED0BCA-3C11-C2DD-E642-7D1CA4031729</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando los países.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,7 +84,9 @@
 <Column name="gender_id" id="E2819C6B-48A1-E141-2537-1D45284466BB">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el sexo del artista.]]></comment>
 <generatorID>223B61D6-0DB8-D253-1BD7-30A4646C1A05</generatorID>
+<notes><![CDATA[Ejemplos: 1,2]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

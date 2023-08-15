@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="78F5F78F-C664-CEA1-96F6-7989103045F8" name="state">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que funciona como catálogo para los estados.]]></comment>
 <generatorID>3337C175-100F-ED7A-1E91-66CC04A213B2</generatorID>
+<notes><![CDATA[Ejemplos: Pausado y Terminado]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="16E93BEC-C3A7-78BE-3F57-AC41AC250432">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria que es un número único para saber el estado del video]]></comment>
 <generatorID>808C5C62-83DD-A6AC-6F16-881B837D8539</generatorID>
+<notes><![CDATA[Ejemplos: 1,2]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="state" id="8986432C-B071-8C89-E6FB-6BA345C2B857">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el nombre del estado del video.]]></comment>
 <generatorID>B29DE456-006A-75EB-19E6-B1EC9A47659D</generatorID>
+<notes><![CDATA[Ejemplos: Pausado o Terminado]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="019E2919-2CC1-09EB-155D-163205841EC7" name="membership">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa el pago de la membresia del cliente]]></comment>
 <generatorID>0B554530-453E-7469-7BF4-7D5D9952FBAD</generatorID>
+<notes><![CDATA[Ejemplos: 09/10/22 a 10000 o 11/05/21 15000]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>

@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93C4B7C0-20D8-FC5F-34A3-E4FDC2B6D7C2" name="download_documentary">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la acción de descargar un documental]]></comment>
 <generatorID>20A2EF82-05CB-0F02-FF84-360DA64D8AC8</generatorID>
+<notes><![CDATA[Ejemplos: Documental Planet Earth descargada por cliente Carlos o Documental Blackfish descargada por cliente Miriam]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>down_doc</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="id" id="308E18CE-F79C-313D-E219-EF3E50668BAE">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la descarga del documental, representa un número único para identificarla]]></comment>
 <generatorID>B64F4B2D-6A8A-144A-5A32-BA82DD9A6BE3</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +27,9 @@
 <Column name="begin_date" id="87D75BBB-2C7A-AFC8-4DFF-06F4FEA580E2">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la fecha de inicio de la descarga]]></comment>
 <generatorID>AFFF5A23-1FD8-394A-8000-6BC039FFE2A6</generatorID>
+<notes><![CDATA[Ejemplos: 21/01/23 o 14/12/22]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="recent_minute" id="47BD8860-A60F-D1F3-21A6-1696D5982F6E">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el último minuto de la descarga.]]></comment>
 <generatorID>7E510DBA-E8DD-B170-4724-76C1525BD48F</generatorID>
+<notes><![CDATA[Ejemplos: 23 o 11]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,7 +53,9 @@
 <Column name="client_id" id="32285A5E-7594-ED49-3D58-814DEC4FC62F">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa que cliente realiza la descarga.]]></comment>
 <generatorID>622005CC-EED6-81C0-8E29-7FAC9F32120C</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -60,7 +70,9 @@
 <Column name="state_id" id="E39561DB-2949-109E-2156-241110B3F60B">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa a el estado actual de la descarga, si esta pausada o terminada.]]></comment>
 <generatorID>70F848C3-617A-B266-FB49-610E3D57FFCA</generatorID>
+<notes><![CDATA[Ejemplos: 1,2]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -75,7 +87,9 @@
 <Column name="documentary_language_id" id="EBD904E6-8F7D-CF25-745B-DA3CE764ED7D">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa que el documental idioma en la que se esta haciendo la descarga.]]></comment>
 <generatorID>46B8D7FD-96D8-D0FC-C3FD-C0A5967F5D08</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

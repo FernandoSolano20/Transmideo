@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E0AEB6C-2159-CFE5-4E6A-25CCFC0C830C" name="cast_documentary">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de documentales con el reparto]]></comment>
 <generatorID>16FDA61B-6B6C-94AB-B738-2C84C2B25679</generatorID>
+<notes><![CDATA[Ejemplos: Planet Earth con Leonardo DiCaprio, Blackfish con Robert De Niro]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>cast_doc</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="id" id="273CC3CB-F754-44D7-FBE5-EB90E016FC74">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del reparto y el documental, representa un número único para identificarla]]></comment>
 <generatorID>E691391A-AABC-2783-0F4F-B02962CF638B</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +27,9 @@
 <Column name="artist_id" id="68144C14-D2A1-306B-6A6D-99213341325C">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el artista que se va a relacionar con el documental.]]></comment>
 <generatorID>38F61154-4ACD-E7B8-0A60-F2BA4955D5CB</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -38,7 +44,9 @@
 <Column name="documentary_id" id="983524C5-653C-07A8-0726-8A2054225D66">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el documental.]]></comment>
 <generatorID>80BD50CC-5A86-B66A-3018-1F1510FCD817</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

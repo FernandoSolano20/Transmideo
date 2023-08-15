@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1E7C8D0-1D21-1E3C-2D08-D3F84BFC8B47" name="documentary_genre">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de documentales con géneros]]></comment>
 <generatorID>1B0D460B-74BE-7F93-435D-F1EA69F89EC7</generatorID>
+<notes><![CDATA[Ejemplos: Planet Earth con romance y aventura, Blackfish con aventura y acción]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>doc_gen</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="genre_id" id="4D6CFC27-D3A2-2309-2C86-E43E77CD4060">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el género que se va a relacionar con el documental.]]></comment>
 <generatorID>A052990A-EDF7-369A-DC9F-A6EEAA60394F</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -27,7 +31,9 @@
 <Column name="documentary_id" id="0B4C305F-AB2E-134E-2223-2CA2B08A24DE">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el documental.]]></comment>
 <generatorID>3A47C897-06FD-AC37-BA0D-5055D9CC7354</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

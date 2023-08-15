@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="811F4AF2-2F20-1955-6A2E-BB6006344D4C" name="documentary_format">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de documentales con formatos]]></comment>
 <generatorID>AFA12F6C-3801-7185-CC92-CC90899CCA64</generatorID>
+<notes><![CDATA[Ejemplos: Planet Earth con mp4, avi, Blackfish con vtv y mov]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>doc_form</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="format_id" id="1CB6301E-D27C-349E-5F36-38BF8D108EE6">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el formato que se va a relacionar con el documental.]]></comment>
 <generatorID>C6A616CC-27D7-9398-DD87-CB98F3273D8F</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -27,7 +31,9 @@
 <Column name="documentary_id" id="BEFC7180-1133-B3C9-B0B9-E5345D9148E5">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el documental.]]></comment>
 <generatorID>37BA65EF-A519-C1B6-7743-CE40780CA8DA</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

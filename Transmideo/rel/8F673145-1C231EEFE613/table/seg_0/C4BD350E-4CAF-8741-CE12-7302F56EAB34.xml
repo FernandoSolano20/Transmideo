@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4BD350E-4CAF-8741-CE12-7302F56EAB34" name="documentary">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa el documental.]]></comment>
 <generatorID>4CDD8A76-43ED-63E1-C3C4-092B602C4E6D</generatorID>
+<notes><![CDATA[Ejemplos: Planet Earth y Blackfish]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>doc</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="id" id="DB33F485-C5D7-BA15-5FE0-5E603815E958">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del documental, representa un número único para identificarla]]></comment>
 <generatorID>FAA43AAE-547F-2EE7-BD0B-DB09DF4DDF4F</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +27,9 @@
 <Column name="title" id="3710B2D6-17CF-25D2-D282-A7430E0AB9AA">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el títlulo del documental.]]></comment>
 <generatorID>CD6AC8C8-A31D-25A1-FEC0-214B0AA16AA3</generatorID>
+<notes><![CDATA[Ejemplos: Planet Earth o Blackfish]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +41,9 @@
 <Column name="abstract" id="897464C9-3809-9F70-459B-705D0B34C316">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la descripción y breve resumen del documental.]]></comment>
 <generatorID>7CF24202-985E-E3E2-32A7-EAADED8454D2</generatorID>
+<notes><![CDATA[Ejemplos: Naturaleza en HD o Orcas en cautiverio.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -47,7 +55,9 @@
 <Column name="begin_date" id="409AC3D0-75CB-A7E4-ECFB-90906758E61E">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el año de lanzamiento del documental.]]></comment>
 <generatorID>9696AAAB-B41C-2284-E409-126CFFD3EBF9</generatorID>
+<notes><![CDATA[Ejemplos: 23/06/67 o 01/10/85]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -58,7 +68,9 @@
 <Column name="length" id="C8991C10-5097-2061-8FDA-DC021740098A">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la duración en minutos del documental.]]></comment>
 <generatorID>5071FF79-F084-2EF5-AE07-56D7C9FA69AA</generatorID>
+<notes><![CDATA[Ejemplos: 142 y 161]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -69,7 +81,9 @@
 <Column name="seasons" id="E0BEB2B3-FDB0-B3C6-36A4-17817B58C249">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la cantidad de temporadas del documental.]]></comment>
 <generatorID>F0E2F13C-49B0-6394-D22F-FF459A493450</generatorID>
+<notes><![CDATA[Ejemplos: 7 o 2]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -80,7 +94,9 @@
 <Column name="chapters" id="CB0B4B8B-0F4B-07FA-C854-D0483B4FE5CE">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la cantidad de capítulos del documental.]]></comment>
 <generatorID>089EAD91-1655-4066-DCA2-26357861EE28</generatorID>
+<notes><![CDATA[Ejemplos: 83 o 118]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -91,7 +107,9 @@
 <Column name="rated_id" id="1F509EC6-514B-1DB1-FD70-B235625C5DAA">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la clasificación de los documentales.]]></comment>
 <generatorID>61FF084D-CCAC-A740-F15F-E19531DEA1B3</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando las clasificaciones.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -106,7 +124,9 @@
 <Column name="docuserie_id" id="07584BAC-4278-FACD-7CCB-7691D418143B">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa si el documental es parte de una docuserie.]]></comment>
 <generatorID>412DDF52-2D6F-C351-A2CC-E6D0FA756874</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando las docuseries.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
