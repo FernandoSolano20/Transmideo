@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="85B3FB99-754D-F58D-CD45-678A757D4962" name="cast_serie">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de series con el reparto]]></comment>
 <generatorID>7285353F-07BA-737E-28D1-C1450B196DC9</generatorID>
+<notes><![CDATA[Ejemplos: Juego de Tronos con Leonardo DiCaprio, Breaking Bad con Robert De Niro]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="359388D8-A90D-CB4D-8D36-83B01ED0D22F">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del reparto y la serie, representa un número único para identificarla]]></comment>
 <generatorID>5E0D7CA0-8BF0-BA01-56B9-08CC8A3E6230</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="artist_id" id="A3AF8429-CC7B-E994-9624-4497B0E861F9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el artista que se va a relacionar con la serie.]]></comment>
 <generatorID>7F9C7503-CE5F-F003-F14B-97D0ADC9133F</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -37,7 +43,9 @@
 <Column name="serie_id" id="60DD8C03-A5E6-03DE-E8AF-5CF1E0489A92">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la serie.]]></comment>
 <generatorID>A376AF77-4916-50CD-F595-4520F47FC15C</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

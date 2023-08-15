@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5D6F4E8-B5E0-9487-B901-F67C81AE6F5B" name="client">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa al cliente.]]></comment>
 <generatorID>ADD0E076-0C71-7BE6-A574-DD205D32898B</generatorID>
+<notes><![CDATA[Ejemplos: Armida o Miriam]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="1B6AEF57-6668-5E94-F605-5263A97D0A2A">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del cliente, representa un número único para identificarlo]]></comment>
 <generatorID>A1CAA80D-A7ED-3290-95C3-23F2EC7CA182</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="name" id="6272B3CC-B028-2122-52EF-EB6A40CA9F65">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta el nombre del cliente.]]></comment>
 <generatorID>AA988111-37CE-19AF-72FA-120B50491E08</generatorID>
+<notes><![CDATA[Ejemplos: Armida o Miriam]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="last_name" id="6DBBE07C-04BB-1A16-7B8B-74D142E66632">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta el apellido del cliente.]]></comment>
 <generatorID>FE77B6EA-85AE-9437-50C5-BBB81A70739F</generatorID>
+<notes><![CDATA[Ejemplos: Galiano Vélez o Briones Calvet]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +54,9 @@
 <Column name="direction" id="2CCF9121-8067-AFF7-54E3-CCC4212A4914">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta la dirección del cliente.]]></comment>
 <generatorID>72B2414F-7D7D-BDC2-3858-D7D9EC03B518</generatorID>
+<notes><![CDATA[Ejemplos: 123 Main St. o 456 Elm Ave.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -58,7 +68,9 @@
 <Column name="phone" id="608151EA-3CF5-DA4C-1EDF-79C30BBCBB95">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta el teléfono del cliente.]]></comment>
 <generatorID>88909BED-6B44-719D-4A47-87C215C2E4BC</generatorID>
+<notes><![CDATA[Ejemplos: (428)9877-1622 o (524)5782-3212]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -70,7 +82,9 @@
 <Column name="birth" id="B00D9BC6-214A-AE05-797E-83AEAB845878">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta el año de nacimiento del cliente.]]></comment>
 <generatorID>FDE14950-8236-6980-3ECA-748CABF50154</generatorID>
+<notes><![CDATA[Ejemplos: 16/11/75 o 06/01/94]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -81,7 +95,9 @@
 <Column name="email" id="DFB9AFBC-2680-1C65-C846-87432F09DA80">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta el correo electrónico del cliente.]]></comment>
 <generatorID>3041F5F7-C06F-3875-5420-AC1D0082E632</generatorID>
+<notes><![CDATA[Ejemplos: armidagalianovélez@gmail.com o miriambrionescalvet@gmail.com]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -93,7 +109,9 @@
 <Column name="inclusion" id="AC6EB422-418D-9ECC-4461-251CE1188B17">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Rrepresenta la fecha cuando el cliente ingreso a la plataforma.]]></comment>
 <generatorID>44EEF4FA-BA93-2549-E971-41F3518DCFA6</generatorID>
+<notes><![CDATA[Ejemplos: 10/08/12 o 10/11/11]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -104,7 +122,9 @@
 <Column name="country_id" id="92EFE710-2B7F-49F4-F810-BAD7D13A99C9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el país del cliente.]]></comment>
 <generatorID>EEB9D96D-F9D0-4F2C-E23D-7A6612915205</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando los países.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -119,7 +139,9 @@
 <Column name="account_type_id" id="00924BEA-97BF-2A22-F2F5-D4A95193A1B9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el tipo de cuenta del cliente.]]></comment>
 <generatorID>92D31A47-AB9B-4FBE-281A-56FA0E90F10A</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando los tipos de cuenta.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -134,7 +156,9 @@
 <Column name="account_status_id" id="7FCC725D-BD33-3945-8733-78F7DE96AA54">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el estado del cliente.]]></comment>
 <generatorID>1726887C-1713-0B37-2A27-DAC764A06BC4</generatorID>
+<notes><![CDATA[Ejemplos: 1,2 represetando los estados de la cuenta.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

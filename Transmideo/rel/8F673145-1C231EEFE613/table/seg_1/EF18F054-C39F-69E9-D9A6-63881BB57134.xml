@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="EF18F054-C39F-69E9-D9A6-63881BB57134" name="movie_genre">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de películas con géneros]]></comment>
 <generatorID>30E2596C-B5E8-6C98-AD8B-388D8BFE4E20</generatorID>
+<notes><![CDATA[Ejemplos: Titanic con romance y aventura, Avatar con aventura y acción]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="genre_id" id="C2AAB9F6-7153-0B9D-71DB-BF47D192352E">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el género que se va a relacionar con la película.]]></comment>
 <generatorID>639C64E8-BBA2-B1E9-220A-012F5D0BAC89</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -26,7 +30,9 @@
 <Column name="movie_id" id="B5F559E5-0C23-10A7-B4A0-1DB26AEAA76C">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la película.]]></comment>
 <generatorID>66770505-F10D-9845-4573-7188FBC7A71D</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

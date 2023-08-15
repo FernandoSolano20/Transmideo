@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="7EC63A9D-2233-D575-645C-711515C6B757" name="serie_format">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de series con formatos]]></comment>
 <generatorID>D02F5BFD-EC65-7D57-69CD-3BC8FF1DF904</generatorID>
+<notes><![CDATA[Ejemplos: Juego de Tronos con mp4, avi, Breaking Bad con vtv y mov]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="format_id" id="7D7763CB-F9DD-1CED-27B2-1F5C12EFD123">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el formato que se va a relacionar con la serie.]]></comment>
 <generatorID>633B3CCD-C669-AD65-AEB1-ADDBB5368636</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -26,7 +30,9 @@
 <Column name="serie_id" id="28EC0F8F-09C0-CD3F-654A-4B6AE0A3243E">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la serie.]]></comment>
 <generatorID>7AAA20C6-84C1-18A6-C114-9E0A79ECA8F0</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

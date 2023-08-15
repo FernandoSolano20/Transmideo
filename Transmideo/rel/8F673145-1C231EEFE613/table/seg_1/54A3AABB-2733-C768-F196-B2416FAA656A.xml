@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="54A3AABB-2733-C768-F196-B2416FAA656A" name="reproduction_movie">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la acción de reproducir un película]]></comment>
 <generatorID>6FBF11A0-D64A-91C8-8109-7CE29267BE7C</generatorID>
+<notes><![CDATA[Ejemplos: Película Titanic reproducida por cliente Carlos o Película Avatar reproducida por cliente Miriam]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>repr_movie</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="id" id="935FDFBB-93CF-F305-FF3C-774E248A832D">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la reproducción de la película, representa un número único para identificarla]]></comment>
 <generatorID>CA21C1B1-EBC0-1543-2F67-6A5B55283874</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +27,9 @@
 <Column name="begin_date" id="A0E431D5-125B-9577-613B-105657C7DB29">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la fecha de inicio de la reproducción]]></comment>
 <generatorID>50BFCBF3-356D-74B4-6005-C18C164CB797</generatorID>
+<notes><![CDATA[Ejemplos: 21/01/23 o 14/12/22]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="recent_minute" id="E613C226-4B73-D707-B290-121A1B8B5662">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el último minuto de la reproducción]]></comment>
 <generatorID>39B9CDC1-66E7-9174-9D86-D0762F437DC9</generatorID>
+<notes><![CDATA[Ejemplos: 23 o 11]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,7 +53,9 @@
 <Column name="client_id" id="7A46789E-7427-A78C-D28C-DDC9DDC9BFD9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa que cliente realiza la reproducción.]]></comment>
 <generatorID>096AF316-F110-1CBA-9836-35F219097EF8</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -60,7 +70,9 @@
 <Column name="state_id" id="06CD6D7E-94CF-52EE-782C-C1D03D523B86">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa a el estado actual de la reproducción, si esta pausada o terminada.]]></comment>
 <generatorID>BAF91969-6404-B4F3-97F6-39DB1B919E64</generatorID>
+<notes><![CDATA[Ejemplos: 1,2]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -75,7 +87,9 @@
 <Column name="movie_language_id" id="BCE0AB0F-AF85-E00D-521D-D6648DBDDA0F">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa que la película e idioma en la que se esta haciendo la reproducción.]]></comment>
 <generatorID>978E46C3-57B1-4D3C-E012-BB32843CD4B9</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

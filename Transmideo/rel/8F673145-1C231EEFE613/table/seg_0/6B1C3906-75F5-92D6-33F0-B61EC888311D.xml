@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B1C3906-75F5-92D6-33F0-B61EC888311D" name="account_status">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que funciona como catálogo para conocer el estado de un cliente.]]></comment>
 <generatorID>E6C2F2E7-B6B5-D42D-B28C-0BE70D460C01</generatorID>
+<notes><![CDATA[Ejemplos: Activo o Inactivo]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="C50A7F21-F796-4C81-604D-82F29ED6B888">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria que es un número único para saber el estado del cliente.]]></comment>
 <generatorID>B1F2F714-6C99-4E76-4211-26A506C5204B</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="status" id="3FED1D76-8F7E-CBE7-FF2C-B934F7D120F9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Nombre del estado del cliente.]]></comment>
 <generatorID>5DB151DC-0AA6-1942-8D22-61E997DE4557</generatorID>
+<notes><![CDATA[Ejemplos: Activo o Inactivo]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

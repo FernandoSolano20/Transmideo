@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="FE721934-B9ED-D7FB-2F04-7BD0AD473E89" name="serie">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la serie.]]></comment>
 <generatorID>674ECCBC-2CCC-6FD2-0D8F-7CE58E3BEA7D</generatorID>
+<notes><![CDATA[Ejemplos: Juego de Tronos y Breaking Bad]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="3A5A97AB-BEE5-508B-92C2-2D01A70EF1F7">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la serie, representa un número único para identificarla]]></comment>
 <generatorID>11109853-5BE6-E46B-B5E7-A0645D0D4E5A</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="title" id="2C59BCBB-6498-376E-756B-E69589133143">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el títlulo de la serie.]]></comment>
 <generatorID>53629265-B42C-32B2-C2C0-A2E158E7509E</generatorID>
+<notes><![CDATA[Ejemplos: Juego de Tronos o Breaking Bad]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="abstract" id="2337ABB5-93FA-16C4-D1C3-7C2B407149F9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la descripción y breve resumen de la serie.]]></comment>
 <generatorID>8701E233-A81D-7AD8-7A79-DFFC4C7F1219</generatorID>
+<notes><![CDATA[Ejemplos: Intrigas y batallas por el trono o Profesor de química se convierte en narcotraficante.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +54,9 @@
 <Column name="begin_date" id="09CC50F7-D7DF-0506-0923-31A0EA9E4D68">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el año de lanzamiento de la serie.]]></comment>
 <generatorID>CE20EEE6-57ED-4A44-EDC3-4A0A3BE49B0C</generatorID>
+<notes><![CDATA[Ejemplos: 23/06/67 o 01/10/85]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,7 +67,9 @@
 <Column name="length" id="B42E5240-B7B7-38A6-1627-83AEB8EB6450">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la duración en minutos de la serie.]]></comment>
 <generatorID>1F7F4545-AD53-4A30-4B17-ABB82C949A04</generatorID>
+<notes><![CDATA[Ejemplos: 142 y 161]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -68,7 +80,9 @@
 <Column name="seasons" id="7B9CBE7A-4CF2-AAFF-3367-0EAD40244156">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la cantidad de temporadas de la serie..]]></comment>
 <generatorID>8C54D8F1-52D8-2873-F03A-96608CF269BA</generatorID>
+<notes><![CDATA[Ejemplos: 7 o 2]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -79,7 +93,9 @@
 <Column name="chapters" id="64A592A7-5B78-012D-EC6C-AA06A5FE73C7">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la cantidad de capítulos de la serie..]]></comment>
 <generatorID>84196C05-CB6A-0E6B-B54E-132CA8D2C4A2</generatorID>
+<notes><![CDATA[Ejemplos: 83 o 118]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -90,7 +106,9 @@
 <Column name="rated_id" id="A9727F42-4D2F-A6FA-003D-FE66D25F9709">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la clasificación de la series.]]></comment>
 <generatorID>200DBC44-7BAF-3467-3793-25F81C7DF4AF</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando las clasificaciones.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -105,7 +123,9 @@
 <Column name="macroserie_id" id="80D5795B-C0A0-05BB-3A6B-588E29BCD700">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa si la serie es parte de una macroserie.]]></comment>
 <generatorID>2E246FF6-DEE4-F346-525E-D8BBAAA622B0</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando las macroserie.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -121,7 +141,9 @@
 <Column name="country_id" id="F1C0DB26-450B-AC2E-2194-2A199A956101">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el país de origen de la serie.]]></comment>
 <generatorID>45BED599-FF4F-ED7D-837E-21F601B3B1A5</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando los países.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

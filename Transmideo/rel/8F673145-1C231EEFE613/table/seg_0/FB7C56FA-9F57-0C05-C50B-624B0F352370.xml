@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB7C56FA-9F57-0C05-C50B-624B0F352370" name="movie">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la película.]]></comment>
 <generatorID>3AC9DA14-2DAF-09E0-9F41-FC00321AACDC</generatorID>
+<notes><![CDATA[Ejemplos: Titanic y Avatar]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="0AFAD361-83BC-E0C9-3A3B-7CDB82C1CC2F">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la película, representa un número único para identificarla]]></comment>
 <generatorID>69E6E6B2-41CD-1645-8488-DFE2C2B14E71</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="title" id="2FE21B3B-6520-7BA2-A3E3-EE6096B41C81">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el títlulo de la película.]]></comment>
 <generatorID>FD0061E1-F38B-AD14-3DBA-CE8F2EAF7A7D</generatorID>
+<notes><![CDATA[Ejemplos: Titanic y Avatar]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="year" id="6BE5ECB9-4831-31F0-9708-C79A39EE723E">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el año de lanzamiento de la película.]]></comment>
 <generatorID>7500F74B-EB3D-1E94-477A-86FD0EA53ECE</generatorID>
+<notes><![CDATA[Ejemplos: 07/07/82 y 14/08/76]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,7 +53,9 @@
 <Column name="length" id="67BD6D2C-5AF2-B316-8AD4-EA6F2E45BABF">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la duración en minutos de la película.]]></comment>
 <generatorID>AF151D34-D4A3-7B07-27EF-255097EEE72C</generatorID>
+<notes><![CDATA[Ejemplos: 142 y 161]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,7 +66,9 @@
 <Column name="country_id" id="78A431B8-3507-AF0E-96A3-8E00AAAB5513">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el país de origen de la película.]]></comment>
 <generatorID>592174E2-F651-7AF1-87C6-48810730217D</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando los países.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -71,7 +83,9 @@
 <Column name="studio_id" id="75E0571C-D317-EC68-ADF2-60A31A01A5B2">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa estudio cinematográfico de la película.]]></comment>
 <generatorID>FAA2FDBF-0360-4E54-1652-D1B3AA896CDD</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando los estudios cinematográficos.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -86,7 +100,9 @@
 <Column name="rated_id" id="694BF891-CDF6-A486-54CC-CFDDEC1540B9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la clasificación de la película.]]></comment>
 <generatorID>A71A523B-4163-062D-E7CE-8BD266711808</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando las clasificaciones.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -101,7 +117,9 @@
 <Column name="saga_id" id="450F242E-4AD3-89F2-57E2-F0E7E71875EA">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa si la película es parte de una saga.]]></comment>
 <generatorID>2E4273D5-0297-9154-7CE7-6C07D6E4462C</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 represetando las sagas.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

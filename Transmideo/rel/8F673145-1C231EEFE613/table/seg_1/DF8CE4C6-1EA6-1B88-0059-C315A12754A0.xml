@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="DF8CE4C6-1EA6-1B88-0059-C315A12754A0" name="movie_language">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de películas con el lenguaje]]></comment>
 <generatorID>0385387F-BA90-BD02-93CD-C073B87E794E</generatorID>
+<notes><![CDATA[Ejemplos: Titanic con audio ingles y subtitulo español, Avatar con audio portugués  y subtitulo español]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>movie_lang</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="id" id="EB52B1C6-AB85-71A8-12D0-6593C4B6934F">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del lenguaje de la película, representa un número único para identificarla]]></comment>
 <generatorID>778ADD0A-4932-C5C8-689D-6B5A8D891EE4</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +27,9 @@
 <Column name="audio_id" id="70E0A982-E926-B51A-9F0A-6E15B2632BF2">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el audio que se va a relacionar con la película.]]></comment>
 <generatorID>A5756F5B-E1B6-F3C7-6437-6D15C6A12863</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -38,7 +44,9 @@
 <Column name="subtitles_id" id="6EAA4818-EF06-A7C1-DD13-261325BB51E3">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa si la película tiene subtítulos.]]></comment>
 <generatorID>D1DD0655-3BD9-C23F-1A06-8CC7EF146C60</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -54,7 +62,9 @@
 <Column name="movie_id" id="FA587A9F-1B7B-18A1-5E47-B867E401BF9E">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la película.]]></comment>
 <generatorID>ECEDC32A-2619-4489-C751-8AB1BC2D22DB</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

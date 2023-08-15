@@ -11,7 +11,9 @@
 <Column name="id" id="CE7DE768-142A-6053-91B5-CAD939AAEA0A">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la membresía, representa un número único para identificarla]]></comment>
 <generatorID>91E20146-D648-5DA5-64A7-E0DD6F02CF12</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +24,9 @@
 <Column name="expiration_day" id="59A3FCD9-9EA4-B080-A304-3011AEFCBD5B">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la fecha de expiración de la membresía.]]></comment>
 <generatorID>4E5FDB1D-7F99-2E8B-8F9F-C11FC13448A3</generatorID>
+<notes><![CDATA[Ejemplos: 09/10/22 y 11/05/21]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +37,9 @@
 <Column name="price" id="5A5D02A7-CE91-B8BF-CE14-D5A99B396659">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el precio que se pago por la membresía.]]></comment>
 <generatorID>63352173-9286-6221-8C8B-19C113C2C361</generatorID>
+<notes><![CDATA[Ejemplos: 20727 y 15078]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,7 +50,9 @@
 <Column name="client_id" id="BB0AA63B-0A5E-2057-3A1D-71EF167DAC2D">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa a que cliente pertenece esa membresía.]]></comment>
 <generatorID>EFB909C5-DBAC-BD04-F832-95F03F34D702</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 representando los IDs de los clientes.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

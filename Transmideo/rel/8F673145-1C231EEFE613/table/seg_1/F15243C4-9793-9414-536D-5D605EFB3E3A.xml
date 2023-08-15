@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F15243C4-9793-9414-536D-5D605EFB3E3A" name="saga">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la saga, un grupo de peíiculas relacionadas entre elllas.]]></comment>
 <generatorID>2657CFBD-0643-7F4E-433C-937A4AA116A5</generatorID>
+<notes><![CDATA[Ejemplos: Saga de Marvel y Saga de DC.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="224574DA-D942-5B3B-D3AB-23D6DF589C4E">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la saga, representa un número único para identificarla]]></comment>
 <generatorID>872B51BC-DF07-3BE0-F890-C04E1E790C8B</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="title" id="A96B9AF9-FB41-9470-B32C-B731F5837BD4">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el títlulo de la saga.]]></comment>
 <generatorID>5E088731-DC52-EBAB-EFBC-19D9C5C19135</generatorID>
+<notes><![CDATA[Ejemplos: Saga de Harry Potter y Saga de Star Wars]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="abstract" id="3ADF0484-68C5-CCCC-7D04-D1A4500AB88A">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la descripción y breve resumen de la saga]]></comment>
 <generatorID>A5F82B5B-56CF-1D84-83F6-FAAEA6683C4A</generatorID>
+<notes><![CDATA[Ejemplos: Magia y aventuras en Hogwarts, Batallas galácticas y la lucha entre el bien y el mal.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +54,9 @@
 <Column name="based_id" id="4FF21C30-773A-7132-4094-90C23621B3CB">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa lo que esta basada la saga.]]></comment>
 <generatorID>72BF0770-ED03-0B4C-9C9D-2378B6981050</generatorID>
+<notes><![CDATA[Ejemplos: 1 representando novela, 2 representando cuento]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

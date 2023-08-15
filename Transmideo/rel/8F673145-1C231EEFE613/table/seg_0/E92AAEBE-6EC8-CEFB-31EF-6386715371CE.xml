@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E92AAEBE-6EC8-CEFB-31EF-6386715371CE" name="cast_movie_role">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de películas, reparto y role]]></comment>
 <generatorID>4F622915-F01C-5DAE-581F-92D0C7F4F8DC</generatorID>
+<notes><![CDATA[Ejemplos: Titanic con Leonardo DiCaprio como director y actor, Avatar con Robert De Niro como actor]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="cast_movie_id" id="F455CA51-77A5-FCEB-CB60-50F41D9526E4">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del reparto, película y role, representa un número único para identificarla]]></comment>
 <generatorID>5C0ADAA9-2A99-4803-64BB-4ED2B5679FBA</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 representando el id del reparto y película.]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -26,7 +30,9 @@
 <Column name="role_id" id="2B44FD3B-CA65-5AC8-E83D-C9ED889C4C57">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del reparto, película y role, representa un número único para identificarla]]></comment>
 <generatorID>5131440F-A721-15BF-E532-908971FCE09E</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 representando el role]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4975E0D7-B677-9AD9-A5A9-90088FF19133" name="studio">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa el estudio de cine y televisión.]]></comment>
 <generatorID>28C1E026-0821-0815-1C36-03C5B7E8D6AB</generatorID>
+<notes><![CDATA[Ejemplos: Universal Pictures y Paramount Pictures]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="773FEF06-B3B1-B736-E6B6-B37FCF893877">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la estudio, representa un número único para identificarla]]></comment>
 <generatorID>6A30C151-2F64-063F-31EC-538113358755</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="name" id="37B7F9CD-0FFB-7A73-1E02-F3EB08D00438">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el nombre del estudio]]></comment>
 <generatorID>95D0E026-A5E8-320F-08FA-65C66C13E798</generatorID>
+<notes><![CDATA[Ejemplos: Warner Bros. Pictures y Universal Pictures]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

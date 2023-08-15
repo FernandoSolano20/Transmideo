@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD83BBD8-F234-3523-B93D-4DA6D114E04D" name="docuserie">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la docuserie, un grupo de documentales relacionadas entre elllas.]]></comment>
 <generatorID>70787595-E6DA-C224-3269-75D7A99081BA</generatorID>
+<notes><![CDATA[Ejemplos: Documentales de cosmos y Documentales de UFO]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="88658E35-FD15-A496-EB95-826D980E35E7">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la docuserie, representa un número único para identificarla]]></comment>
 <generatorID>F2B5618A-43B0-B9CD-D2F9-072A3E64B75C</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="title" id="AF0FED0B-1FE9-70E4-E319-C9BE6CB52FB6">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el títlulo de la docuserie.]]></comment>
 <generatorID>097FB081-3971-207E-B598-9506E584DC8B</generatorID>
+<notes><![CDATA[Ejemplos: Documentales de cosmos y Documentales de UFO]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="abstract" id="C0698F6D-6AF7-50D0-2EF3-33F886FC1DE2">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la descripción y breve resumen de la docuserie.]]></comment>
 <generatorID>FB0032DA-ACC7-7AA9-3823-3687BBF013D5</generatorID>
+<notes><![CDATA[Ejemplos: Exploración del universo y sus misterios y Investigación de avistamientos de OVNIs]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +54,9 @@
 <Column name="based_id" id="B2032DF7-4FC9-3C9F-A478-A5E625A1A7F4">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa lo que esta basada la docuserie.]]></comment>
 <generatorID>10FD271D-3E4B-8AE2-947B-828B6D8B8D6B</generatorID>
+<notes><![CDATA[Ejemplos: 1 representando novela, 2 representando cuento]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="37B5CD3E-2202-B032-6BF0-99864181F316" name="serie_genre">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de series con géneros]]></comment>
 <generatorID>19B44CC5-81D2-93CA-F626-2415D8C51DB0</generatorID>
+<notes><![CDATA[Ejemplos: Juego de Tronos con romance y aventura, Breaking Bad con aventura y acción]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="genre_id" id="730C0666-86B9-1CA9-0258-2F65DEFA0F88">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el género que se va a relacionar con la serie.]]></comment>
 <generatorID>1BBA5137-7CAD-620F-7161-85E8AC92B2B2</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -26,7 +30,9 @@
 <Column name="serie_id" id="EE769523-95FD-63D9-7C81-6746E398F1B2">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la serie.]]></comment>
 <generatorID>001B1221-393E-253B-27CC-1372B6BD8E4C</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

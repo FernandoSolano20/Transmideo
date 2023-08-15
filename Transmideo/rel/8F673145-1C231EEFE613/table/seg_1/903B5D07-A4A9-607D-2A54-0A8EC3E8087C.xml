@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="903B5D07-A4A9-607D-2A54-0A8EC3E8087C" name="serie_language">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la unión de series con el lenguaje]]></comment>
 <generatorID>E94A7982-FF28-0740-94BF-A1AF5EA9F79C</generatorID>
+<notes><![CDATA[Ejemplos: Juego de Tronos con audio ingles y subtitulo español, Breaking Bad con audio portugués  y subtitulo español]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <abbreviation>serie_lang</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +14,9 @@
 <Column name="id" id="96463661-E0F2-B0E2-9724-99A9DA434C89">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del lenguaje de la serie, representa un número único para identificarla]]></comment>
 <generatorID>729612AC-985B-4890-A352-52D879C34E9E</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +27,9 @@
 <Column name="audio_id" id="390EAEAB-A8AB-7A15-9D07-ECB81F0BCE80">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa el audio que se va a relacionar con la serie.]]></comment>
 <generatorID>3CE12E90-7E57-7325-56A0-4A4E01F7C9C6</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -38,7 +44,9 @@
 <Column name="subtitles_id" id="31BF4302-7567-65BA-9400-5F5F85357CB9">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa si la serie tiene subtítulos.]]></comment>
 <generatorID>DB6CCC46-C6BD-EB9C-7E57-8F7AF0197D6C</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -54,7 +62,9 @@
 <Column name="serie_id" id="BE498EF5-1A07-B037-900B-6F6F96D9B49C">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa la serie.]]></comment>
 <generatorID>3CDF3C9A-7FE6-757C-2421-0D797400533F</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

@@ -11,7 +11,9 @@
 <Column name="id" id="544EB69B-062B-C1C0-A8EE-659C87B2A9F2">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria que es un número único para representar los formatos.]]></comment>
 <generatorID>4EAA3B5D-FE50-AA4B-10C6-53E2EFCEFE95</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +24,9 @@
 <Column name="type" id="D96108DA-9275-7DF5-30C9-0B9E5976BC0E">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el nombre del formato de los videos.]]></comment>
 <generatorID>8D7E450D-2FCE-9F83-E68F-F70FBF410AB6</generatorID>
+<notes><![CDATA[Ejemplos: TVT o MP4]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

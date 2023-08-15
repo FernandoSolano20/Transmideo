@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="680AD51A-3D8A-2FCE-A255-D1E0A2572648" name="download_movie">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa la acción de descargar una película]]></comment>
 <generatorID>E9F26F8D-EF80-FD13-3F58-2AA080B6E2A9</generatorID>
+<notes><![CDATA[Ejemplos: Película Titanic descargada por cliente Carlos o Película Avatar descargada por cliente Miriam]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="E823CF50-5095-C4C3-99F2-61FEDF023FEC">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria de la descarga de la película, representa un número único para identificarla]]></comment>
 <generatorID>90A35381-3CAD-8AB8-5CEB-1CB519002C02</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="begin_date" id="E18E200B-CF24-4944-68A0-D59216C19F18">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa la fecha de inicio de la descarga]]></comment>
 <generatorID>AFE7756D-D08F-51AE-7568-971F2A444D7B</generatorID>
+<notes><![CDATA[Ejemplos: 21/01/23 o 14/12/22]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +39,9 @@
 <Column name="recent_minute" id="E4248332-7BEB-262F-737F-69F8A14E16B0">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el último minuto de la descarga.]]></comment>
 <generatorID>64645820-06F2-1D4F-C24D-A67D0C7D716E</generatorID>
+<notes><![CDATA[Ejemplos: 23 o 11]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,7 +52,9 @@
 <Column name="client_id" id="F627D79D-95A8-6650-1993-AC62981511A2">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa que cliente realiza la descarga.]]></comment>
 <generatorID>954C49D6-ADFB-02D2-FF3F-197BD4E68872</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +69,9 @@
 <Column name="state_id" id="43FFD978-A9F6-9704-8FDC-A043BD1F809D">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa a el estado actual de la descarga, si esta pausada o terminada.]]></comment>
 <generatorID>55350A90-1164-2D0B-05EF-1F4D7C210A7F</generatorID>
+<notes><![CDATA[Ejemplos: 1,2]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -74,7 +86,9 @@
 <Column name="movie_language_id" id="9AA62CA6-E2E7-777F-4B86-07348BE339FB">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa que la película e idioma en la que se esta haciendo la descarga.]]></comment>
 <generatorID>42415056-593F-5870-FE1D-A9899D129499</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

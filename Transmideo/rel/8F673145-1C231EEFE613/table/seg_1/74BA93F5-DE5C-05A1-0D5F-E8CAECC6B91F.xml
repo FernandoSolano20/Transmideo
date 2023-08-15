@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="74BA93F5-DE5C-05A1-0D5F-E8CAECC6B91F" name="role">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que funciona como catálogo para conocer los roles de los artistas]]></comment>
 <generatorID>017C064E-8FAF-6448-365D-5E90D2CEAAAA</generatorID>
+<notes><![CDATA[Ejemplos: Actor o Director]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="C01CA034-D560-55D7-50E8-D1181861B90C">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria que es un número único para representar los roles.]]></comment>
 <generatorID>F4A8AC88-61B9-A62A-E854-66AAF8DE6E8A</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="name" id="CC8703B3-1AF3-AB39-1546-B3D710269EF7">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Representa el nombre del role de los artistas.]]></comment>
 <generatorID>92DD51B9-347C-80B4-49A2-348E359984CB</generatorID>
+<notes><![CDATA[Ejemplos: Actor o Director]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

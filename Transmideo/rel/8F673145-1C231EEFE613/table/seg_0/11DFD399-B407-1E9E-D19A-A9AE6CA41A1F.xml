@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11DFD399-B407-1E9E-D19A-A9AE6CA41A1F" name="device">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Entidad que representa los dispositivos electrónicos con acceso a la plataforma]]></comment>
 <generatorID>553CCD90-2EB0-0DBC-9B2A-92F8FBF00A11</generatorID>
+<notes><![CDATA[Ejemplos: iPhone 13 y TV Samsung]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,9 @@
 <Column name="id" id="C42136A0-0249-1104-927E-A802766CE5FA">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave primaria del dispositivo del cliente, representa un número único para identificar los dispositivos asociados al cleinte.]]></comment>
 <generatorID>10EE75C5-C8FB-B6CE-0C05-68D4E33A113E</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,7 +26,9 @@
 <Column name="name" id="1AF42701-4878-C673-8B62-71663560C4B0">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Nombre del dispositivo del cliente.]]></comment>
 <generatorID>372351FF-D7D1-F6E1-C671-A04D22B9A85E</generatorID>
+<notes><![CDATA[Ejemplos: TV Samsung y iPhone 13]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +40,9 @@
 <Column name="client_id" id="9CE7F0BA-CA1E-422E-C948-9087A0730211">
 <createdBy>fersolano</createdBy>
 <createdTime>2023-08-10 18:55:59 UTC</createdTime>
+<comment><![CDATA[Llave foranea que representa a que cliente pertenece ese dispositivo.]]></comment>
 <generatorID>998CDFC0-7E46-0675-8415-5779417CF1A8</generatorID>
+<notes><![CDATA[Ejemplos: 1,2,3 representando los IDs de los clientes]]></notes>
 <ownerDesignName>Transmideo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
